@@ -1,0 +1,14 @@
+.btn-redirect{
+    border-radius: 4px;
+    background: #313C38;
+    color: #FFF;
+    font-family: Arvo;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 14px 30px;
+}
+
+.btn-redirect:hover{
+    background: #38433f;
+}

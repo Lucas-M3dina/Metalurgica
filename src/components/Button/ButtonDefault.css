@@ -1,0 +1,14 @@
+.btn-default{
+    border-radius: 4px;
+    background: #17211E;
+    color: #FFF;
+    font-family: Arvo;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 30px;
+}
+
+.btn-default:hover{
+    cursor: pointer;
+    background: #243330;
+}
