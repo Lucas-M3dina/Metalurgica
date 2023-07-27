@@ -10,6 +10,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Login } from './pages/Login/Login.tsx';
 import { Cadastro } from './pages/Cadastro/Cadastro.tsx';
 import { Error } from './pages/Error/Error.tsx';
+import { Dashboard } from './pages/Dashboard/Dashboard.tsx';
 
 
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "cadastro",
         element: <Cadastro/>
+      },
+      {
+        path: "dashboard",
+        element: <Dashboard/>
       },
     ]
 
