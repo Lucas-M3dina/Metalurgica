@@ -1,0 +1,111 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.input-login{
+  width: 80%;
+}
+
+/* BOTAO CSS  */
+.btn-redirect{
+  border-radius: 4px;
+  background: #313C38;
+  color: #FFF;
+  font-family: Arvo;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  padding: 14px 30px;
+}
+
+.btn-redirect:hover{
+  background: #38433f;
+}
+
+/* BOTAO  DEFAULT */
+
+.btn-default{
+  border-radius: 4px;
+  background: #17211E;
+  color: #FFF;
+  font-family: Arvo;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 30px;
+}
+
+.btn-default:hover{
+  cursor: pointer;
+  background: #243330;
+}
+
+/* LEFT BOX */
+
+.left-box-login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-image: url('../../../assets/Fundo-Imagem-Login.png');
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 70px 0;
+  gap: 60px;
+}
+
+.logo-redondo-login{
+  max-width: 150px;
+  width: 25%;
+}
+
+.box-text-login{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.text-login{
+  color: #FFF;
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* RIGHT BOX */
+
+.right-box-login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  padding: 70px 0;
+  gap: 60px;
+}
+
+.logo-login{
+  max-width: 150px;
+  width: 25%;
+}
+
+.form-login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 20px;
+}
