@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { InputDefaultComponent } from './components/shared/input/input-default/input-default.component';
 import {ReactiveFormsModule } from '@angular/forms';
+import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     InputDefaultComponent,
+    SidebarComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

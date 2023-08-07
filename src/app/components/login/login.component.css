@@ -24,6 +24,7 @@
 
 .btn-redirect:hover{
   background: #38433f;
+  cursor: pointer;
 }
 
 /* BOTAO  DEFAULT */
@@ -108,4 +109,35 @@
   justify-content: center;
   width: 80%;
   gap: 20px;
+}
+
+@media (max-width:1360px){
+
+  /* LEFT BOX */
+
+  .logo-redondo-login{
+    max-width: 135px;
+  }
+
+  .text-login{
+    font-size: 14px;
+  }
+
+
+  /* RIGHT BOX */
+
+  .logo-login{
+    max-width: 135px;
+  }
+
+  .right-box-login{
+    gap: 40px;
+  }
+
+  /* BOTAO Redirect  */
+  .btn-redirect{
+    font-size: 14px;
+  }
+
+
 }
