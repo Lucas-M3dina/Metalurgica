@@ -11,9 +11,10 @@ namespace Metalurgica.Controllers
     {
 
         private readonly IUsuarioRepository _usuarioRepository;
-        
-
-    
+        public UsuariosController(IUsuarioRepository usuarioRepository)
+        {
+            _usuarioRepository = usuarioRepository;
+        }
 
         [HttpGet]
         public IActionResult Listar(){

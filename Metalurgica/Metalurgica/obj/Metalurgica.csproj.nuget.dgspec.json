@@ -1,26 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Metalurgica\\Metalurgica.csproj": {}
+    "C:\\source\\gitPessoal\\Metalurgica\\Metalurgica\\Metalurgica\\Metalurgica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Metalurgica\\Metalurgica.csproj": {
+    "C:\\source\\gitPessoal\\Metalurgica\\Metalurgica\\Metalurgica\\Metalurgica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Metalurgica\\Metalurgica.csproj",
+        "projectUniqueName": "C:\\source\\gitPessoal\\Metalurgica\\Metalurgica\\Metalurgica\\Metalurgica.csproj",
         "projectName": "Metalurgica",
-        "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Metalurgica\\Metalurgica.csproj",
-        "packagesPath": "C:\\Users\\lucaso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Metalurgica\\obj\\",
+        "projectPath": "C:\\source\\gitPessoal\\Metalurgica\\Metalurgica\\Metalurgica\\Metalurgica.csproj",
+        "packagesPath": "C:\\Users\\fernandon\\.nuget\\packages\\",
+        "outputPath": "C:\\source\\gitPessoal\\Metalurgica\\Metalurgica\\Metalurgica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lucaso\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\fernandon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/mac-eng/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -77,8 +80,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -90,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.412\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.315\\RuntimeIdentifierGraph.json"
         }
       }
     }

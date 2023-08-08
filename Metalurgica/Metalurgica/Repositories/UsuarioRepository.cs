@@ -1,3 +1,4 @@
+using Metalurgica.Context;
 using Metalurgica.Interfaces;
 using Metalurgica.Models;
 
@@ -7,6 +8,10 @@ namespace Metalurgica.Repositories
     {
         private readonly MetalurgicaEstudoContext ctx;
 
+        public UsuarioRepository(MetalurgicaEstudoContext _ctx)
+        {
+            ctx = _ctx;
+        }
         public List<LmUsuario> ConsultaTodos(){
             if (ctx == null)
             {

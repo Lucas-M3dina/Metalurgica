@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using Metalurgica.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Metalurgica.Models;
+namespace Metalurgica.Context;
 
 public partial class MetalurgicaEstudoContext : DbContext
 {
