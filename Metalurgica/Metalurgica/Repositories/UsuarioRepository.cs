@@ -13,10 +13,6 @@ namespace Metalurgica.Repositories
             ctx = _ctx;
         }
         public List<LmUsuario> ConsultaTodos(){
-            if (ctx == null)
-            {
-                Console.WriteLine("TA NULOOOOOOOOOOOOOOOOOOOOOO");
-            }
             return ctx.LmUsuarios.ToList();
         }
 
@@ -30,7 +26,7 @@ namespace Metalurgica.Repositories
 
             if (usuarioAtualizado.DsSenha != null)
             {
-                user.DsSenha = usuarioAtualizado.DsSenha;
+                user.DsSenha = BCrypt.Net.BCrypt.HashPassword(usuarioAtualizado.DsSenha);
             }
 
             if (usuarioAtualizado.NmNome != null)
@@ -57,6 +53,22 @@ namespace Metalurgica.Repositories
             LmUsuario usuarioBuscado = ConsultaPorID(id);
             ctx.Remove(usuarioBuscado);
             ctx.SaveChanges();
+        }
+
+        public LmUsuario Login( string email, string password)
+        {
+            var usuario = ctx.LmUsuarios.FirstOrDefault(u => u.DsEmail == email);
+
+            if (usuario != null)
+            {
+                bool comparando = BCrypt.Net.BCrypt.Verify(password, usuario.DsSenha);
+                if (comparando)
+                {
+                    return usuario;
+                }
+            }
+
+            return null;
         }
 
 

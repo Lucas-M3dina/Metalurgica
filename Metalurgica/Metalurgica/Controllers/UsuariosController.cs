@@ -28,5 +28,48 @@ namespace Metalurgica.Controllers
             }
         }
 
+        [HttpPost]
+        public IActionResult Criar(LmUsuario u)
+        {
+            try
+            {
+                _usuarioRepository.Insere(u);
+                return StatusCode(201);
+            }
+            catch (Exception Erro)
+            {
+                return BadRequest(Erro);
+            }
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Alterar(LmUsuario user, int id)
+        {
+            try
+            {
+                _usuarioRepository.Atualiza(id, user);
+                return StatusCode(200);
+            }
+            catch (Exception error)
+            {
+                return BadRequest(error);
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            try
+            {
+                _usuarioRepository.Exclui(id);
+                return StatusCode(200);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500);
+            }
+        }
+
+
     }
 }

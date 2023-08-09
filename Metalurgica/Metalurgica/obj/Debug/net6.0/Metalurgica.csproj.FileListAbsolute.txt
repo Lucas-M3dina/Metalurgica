@@ -188,3 +188,8 @@ C:\source\gitPessoal\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\refint
 C:\source\gitPessoal\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.pdb
 C:\source\gitPessoal\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.genruntimeconfig.cache
 C:\source\gitPessoal\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\ref\Metalurgica.dll
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\staticwebassets\msbuild.Metalurgica.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\staticwebassets\msbuild.build.Metalurgica.props
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Metalurgica.props
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Metalurgica.props
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\staticwebassets.pack.json
