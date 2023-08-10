@@ -1,0 +1,11 @@
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Entities\bin\Debug\net6.0\Entities.deps.json
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Entities\bin\Debug\net6.0\Entities.dll
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Entities\bin\Debug\net6.0\Entities.pdb
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Entities\obj\Debug\net6.0\Entities.dll
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Entities\obj\Debug\net6.0\refint\Entities.dll
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Entities\obj\Debug\net6.0\Entities.pdb
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Entities\obj\Debug\net6.0\ref\Entities.dll

@@ -4,14 +4,90 @@
     "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Metalurgica\\Metalurgica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Metalurgica\\Metalurgica.csproj": {
+    "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Biz\\Biz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Metalurgica\\Metalurgica.csproj",
-        "projectName": "Metalurgica",
-        "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Metalurgica\\Metalurgica.csproj",
+        "projectUniqueName": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Biz\\Biz.csproj",
+        "projectName": "Biz",
+        "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Biz\\Biz.csproj",
         "packagesPath": "C:\\Users\\lucaso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Metalurgica\\obj\\",
+        "outputPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Biz\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lucaso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Data\\Data.csproj"
+              },
+              "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.DynamicLinq": {
+              "target": "Package",
+              "version": "[7.3.4, )"
+            },
+            "System.Linq.Dynamic.Core": {
+              "target": "Package",
+              "version": "[1.3.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Data\\Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Data\\Data.csproj",
+        "projectName": "Data",
+        "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\lucaso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lucaso\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +116,144 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Entities\\Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Entities\\Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\lucaso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lucaso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Metalurgica\\Metalurgica.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Metalurgica\\Metalurgica.csproj",
+        "projectName": "Metalurgica",
+        "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Metalurgica\\Metalurgica.csproj",
+        "packagesPath": "C:\\Users\\lucaso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Metalurgica\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lucaso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Biz\\Biz.csproj": {
+                "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Biz\\Biz.csproj"
+              },
+              "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Data\\Data.csproj"
+              },
+              "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
             "BCrypt.Net-Next": {
               "target": "Package",
               "version": "[4.0.3, )"
@@ -47,6 +261,10 @@
             "EntityFramework": {
               "target": "Package",
               "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.21, )"
             },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
@@ -71,6 +289,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.21.0, )"
             }
           },
           "imports": [

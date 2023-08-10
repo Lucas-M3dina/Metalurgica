@@ -1,7 +1,9 @@
-using Metalurgica.Context;
-using Metalurgica.Interfaces;
-using Metalurgica.Models;
-using Metalurgica.Repositories;
+using Biz.Interfaces;
+using Biz.Services;
+using Data.Context;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +14,30 @@ builder.Services.AddSwaggerGen();
 
 
 builder.Services.AddDbContext<MetalurgicaEstudoContext>();
-builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddScoped<ILmUsuarioService, LmUsuarioService>();
+
+var key = Encoding.ASCII.GetBytes("testandoJWTtoken");
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(x =>
+ {
+     x.RequireHttpsMetadata = false;
+     x.SaveToken = true;
+     x.TokenValidationParameters = new TokenValidationParameters
+     {
+         ValidateIssuerSigningKey = true,
+         IssuerSigningKey = new SymmetricSecurityKey(key),
+         ValidateIssuer = false,
+         ValidateAudience = false
+     };
+ });
+
+
+
 
 builder.Services
     .AddControllers()
@@ -26,6 +51,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseAuthentication();
+
+app.UseAuthorization();
 
 app.UseHttpsRedirection();
 

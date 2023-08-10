@@ -1,6 +1,6 @@
-using Metalurgica.Interfaces;
-using Metalurgica.Models;
 using Microsoft.AspNetCore.Mvc;
+using Biz.Interfaces;
+using Data.Models;
 
 namespace Metalurgica.Controllers
 {
@@ -10,8 +10,8 @@ namespace Metalurgica.Controllers
     public class UsuariosController : ControllerBase
     {
 
-        private readonly IUsuarioRepository _usuarioRepository;
-        public UsuariosController(IUsuarioRepository usuarioRepository)
+        private readonly ILmUsuarioService _usuarioRepository;
+        public UsuariosController(ILmUsuarioService usuarioRepository)
         {
             _usuarioRepository = usuarioRepository;
         }
@@ -27,13 +27,14 @@ namespace Metalurgica.Controllers
                 return BadRequest(Erro);
             }
         }
+        
 
         [HttpPost]
         public IActionResult Criar(LmUsuario u)
         {
             try
             {
-                _usuarioRepository.Insere(u);
+                _usuarioRepository.Insere(u, u.DsEmail);
                 return StatusCode(201);
             }
             catch (Exception Erro)
@@ -41,6 +42,8 @@ namespace Metalurgica.Controllers
                 return BadRequest(Erro);
             }
         }
+
+        
 
         [HttpPut("{id}")]
         public IActionResult Alterar(LmUsuario user, int id)
@@ -56,6 +59,8 @@ namespace Metalurgica.Controllers
             }
         }
 
+
+
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
@@ -69,6 +74,8 @@ namespace Metalurgica.Controllers
                 return StatusCode(500);
             }
         }
+
+        
 
 
     }
