@@ -1,6 +1,7 @@
 using Biz.Interfaces;
 using Biz.Services;
 using Data.Context;
+using Data.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -15,6 +16,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<MetalurgicaEstudoContext>();
 builder.Services.AddScoped<ILmUsuarioService, LmUsuarioService>();
+builder.Services.AddScoped<ILmEmpresaService, LmEmpresaService>();
+
+
 
 var key = Encoding.ASCII.GetBytes("testandoJWTtoken");
 

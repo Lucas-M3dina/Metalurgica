@@ -113,15 +113,11 @@ public partial class MetalurgicaEstudoContext : DbContext
                 .HasColumnType("datetime")
                 .HasColumnName("Dt_Cadastro");
             entity.Property(e => e.FlAtivo).HasColumnName("Fl_Ativo");
-            entity.Property(e => e.IdLote).HasColumnName("Id_Lote");
             entity.Property(e => e.NmNome)
                 .HasMaxLength(50)
                 .IsUnicode(false)
                 .HasColumnName("Nm_Nome");
 
-            entity.HasOne(d => d.IdLoteNavigation).WithMany(p => p.LmEmpresas)
-                .HasForeignKey(d => d.IdLote)
-                .HasConstraintName("FK__LM_Empres__Id_Lo__34C8D9D1");
         });
 
         modelBuilder.Entity<LmLote>(entity =>

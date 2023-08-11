@@ -1,5 +1,6 @@
 ﻿using Biz.Infra.Base;
 using Data.Context;
+using Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace Biz.Infra
 {
-    internal class LmEmpresa : BaseInfraContext<LmEmpresa>
+    public class LmEmpresaInfra : BaseInfraContext<LmEmpresa>
     {
-        public LmEmpresa(MetalurgicaEstudoContext ctx) : base(ctx)
+        public LmEmpresaInfra(MetalurgicaEstudoContext ctx) : base(ctx)
         {
         }
 
-        public LmEmpresa() : base(new MetalurgicaEstudoContext())
+        public LmEmpresaInfra() : base(new MetalurgicaEstudoContext())
         {
         }
     }

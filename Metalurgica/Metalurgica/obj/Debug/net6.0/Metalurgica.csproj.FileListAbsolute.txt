@@ -93,13 +93,6 @@ C:\source\gitPessoal\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\refint
 C:\source\gitPessoal\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.pdb
 C:\source\gitPessoal\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.genruntimeconfig.cache
 C:\source\gitPessoal\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\ref\Metalurgica.dll
-C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.csproj.AssemblyReference.cache
-C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.AssemblyInfoInputs.cache
-C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.AssemblyInfo.cs
-C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.csproj.CoreCompileInputs.cache
-C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\appsettings.json
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\Metalurgica.exe
@@ -113,6 +106,7 @@ C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\BCr
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\EntityFramework.SqlServer.dll
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\EntityFramework.dll
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\Humanizer.dll
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -183,8 +177,17 @@ C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\run
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\Biz.dll
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\Data.dll
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\Entities.dll
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\Data.pdb
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\Biz.pdb
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\Entities.pdb
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.csproj.AssemblyReference.cache
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.AssemblyInfoInputs.cache
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.AssemblyInfo.cs
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.csproj.CoreCompileInputs.cache
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\staticwebassets\msbuild.Metalurgica.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\staticwebassets\msbuild.build.Metalurgica.props
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Metalurgica.props
@@ -199,6 +202,3 @@ C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\ref
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.pdb
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.genruntimeconfig.cache
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\ref\Metalurgica.dll
-C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\Entities.dll
-C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\Entities.pdb
