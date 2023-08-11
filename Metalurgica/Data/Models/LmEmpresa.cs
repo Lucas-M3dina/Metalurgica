@@ -7,9 +7,11 @@ public partial class LmEmpresa
 {
     public int IdEmpresa { get; set; }
 
-    public string DsSegmento { get; set; } = null!;
+    public int? IdLote { get; set; }
 
-    public string NmNome { get; set; } = null!;
+    public string? DsSegmento { get; set; }
+
+    public string? NmNome { get; set; }
 
     public DateTime? DtCadastro { get; set; }
 
@@ -19,4 +21,5 @@ public partial class LmEmpresa
 
     public string? DsUltAlteracao { get; set; }
 
+    public virtual LmLote? IdLoteNavigation { get; set; }
 }

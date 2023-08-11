@@ -12,3 +12,17 @@ C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Data\obj\Debug\net6.0\refint\Dat
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Data\obj\Debug\net6.0\Data.pdb
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Data\obj\Debug\net6.0\Data.genruntimeconfig.cache
 C:\Users\lucaso\Desktop\Metalurgica\Metalurgica\Data\obj\Debug\net6.0\ref\Data.dll
+C:\Users\lucaso\Desktop\Metalurgica-correcao\Metalurgica\Data\bin\Debug\net6.0\Data.deps.json
+C:\Users\lucaso\Desktop\Metalurgica-correcao\Metalurgica\Data\bin\Debug\net6.0\Data.runtimeconfig.json
+C:\Users\lucaso\Desktop\Metalurgica-correcao\Metalurgica\Data\bin\Debug\net6.0\Data.dll
+C:\Users\lucaso\Desktop\Metalurgica-correcao\Metalurgica\Data\bin\Debug\net6.0\Data.pdb
+C:\Users\lucaso\Desktop\Metalurgica-correcao\Metalurgica\Data\obj\Debug\net6.0\Data.csproj.AssemblyReference.cache
+C:\Users\lucaso\Desktop\Metalurgica-correcao\Metalurgica\Data\obj\Debug\net6.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucaso\Desktop\Metalurgica-correcao\Metalurgica\Data\obj\Debug\net6.0\Data.AssemblyInfoInputs.cache
+C:\Users\lucaso\Desktop\Metalurgica-correcao\Metalurgica\Data\obj\Debug\net6.0\Data.AssemblyInfo.cs
+C:\Users\lucaso\Desktop\Metalurgica-correcao\Metalurgica\Data\obj\Debug\net6.0\Data.csproj.CoreCompileInputs.cache
+C:\Users\lucaso\Desktop\Metalurgica-correcao\Metalurgica\Data\obj\Debug\net6.0\Data.dll
+C:\Users\lucaso\Desktop\Metalurgica-correcao\Metalurgica\Data\obj\Debug\net6.0\refint\Data.dll
+C:\Users\lucaso\Desktop\Metalurgica-correcao\Metalurgica\Data\obj\Debug\net6.0\Data.pdb
+C:\Users\lucaso\Desktop\Metalurgica-correcao\Metalurgica\Data\obj\Debug\net6.0\Data.genruntimeconfig.cache
+C:\Users\lucaso\Desktop\Metalurgica-correcao\Metalurgica\Data\obj\Debug\net6.0\ref\Data.dll

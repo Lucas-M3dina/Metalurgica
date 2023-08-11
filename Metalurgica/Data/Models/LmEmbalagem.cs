@@ -7,7 +7,7 @@ public partial class LmEmbalagem
 {
     public int IdEmbalagem { get; set; }
 
-    public string NmNome { get; set; } = null!;
+    public string? NmNome { get; set; }
 
     public DateTime? DtCadastro { get; set; }
 

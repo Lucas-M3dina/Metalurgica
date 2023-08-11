@@ -9,7 +9,7 @@ public partial class LmProduto
 
     public int? IdElemento { get; set; }
 
-    public string NmNome { get; set; } = null!;
+    public string? NmNome { get; set; }
 
     public DateTime? DtCadastro { get; set; }
 

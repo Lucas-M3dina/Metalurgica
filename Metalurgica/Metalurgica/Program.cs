@@ -1,7 +1,6 @@
 using Biz.Interfaces;
 using Biz.Services;
 using Data.Context;
-using Data.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;

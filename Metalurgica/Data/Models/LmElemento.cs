@@ -7,11 +7,11 @@ public partial class LmElemento
 {
     public int IdElemento { get; set; }
 
-    public string NmNome { get; set; } = null!;
+    public string? NmNome { get; set; }
 
-    public string DsEspecificacao { get; set; } = null!;
+    public string? DsEspecificacao { get; set; }
 
-    public string DsAstm { get; set; } = null!;
+    public string? DsAstm { get; set; }
 
     public DateTime? DtCadastro { get; set; }
 
