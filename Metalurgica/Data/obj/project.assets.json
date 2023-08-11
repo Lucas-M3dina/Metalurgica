@@ -3515,11 +3515,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lucaso\\Desktop\\Metalurgica-correcao\\Metalurgica\\Data\\Data.csproj",
+      "projectUniqueName": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica-correcao\\Metalurgica\\Data\\Data.csproj",
+      "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Data\\Data.csproj",
       "packagesPath": "C:\\Users\\lucaso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica-correcao\\Metalurgica\\Data\\obj\\",
+      "outputPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lucaso\\AppData\\Roaming\\NuGet\\NuGet.Config",

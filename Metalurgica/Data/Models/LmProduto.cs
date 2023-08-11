@@ -9,13 +9,13 @@ public partial class LmProduto
 
     public int? IdElemento { get; set; }
 
-    public string? NmNome { get; set; }
+    public string NmNome { get; set; } = null!;
 
-    public DateTime? DtCadastro { get; set; }
+    public DateTime DtCadastro { get; set; }
 
     public DateTime? DtAlteracao { get; set; }
 
-    public bool? FlAtivo { get; set; }
+    public bool FlAtivo { get; set; }
 
     public string? DsUltAlteracao { get; set; }
 

@@ -9,17 +9,17 @@ public partial class LmUsuario
 
     public int? IdTipoUsuario { get; set; }
 
-    public string? NmNome { get; set; }
+    public string NmNome { get; set; } = null!;
 
-    public string? DsEmail { get; set; }
+    public string DsEmail { get; set; } = null!;
 
-    public string? DsSenha { get; set; }
+    public string DsSenha { get; set; } = null!;
 
-    public DateTime? DtCadastro { get; set; }
+    public DateTime DtCadastro { get; set; }
 
     public DateTime? DtAlteracao { get; set; }
 
-    public bool? FlAtivo { get; set; }
+    public bool FlAtivo { get; set; }
 
     public string? DsUltAlteracao { get; set; }
 

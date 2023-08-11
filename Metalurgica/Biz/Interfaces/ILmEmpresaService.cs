@@ -1,4 +1,5 @@
 ﻿using Data.Models;
+using Entities.Empresa;
 using Entities.Usuario;
 using System;
 using System.Collections.Generic;
@@ -22,7 +23,7 @@ namespace Biz.Interfaces
         /// </summary>
         /// <param name="id">ID da empresa que será atualizado</param>
         /// <param name="empresaAtualizado">Objeto com as novas informações</param>
-        void Atualiza(int id, LmEmpresa empresaAtualizado);
+        void Atualiza(int id, EmpresaViewModel empresaAtualizado, string responsavel);
 
         /// <summary>
         /// Deleta uma empresa existente
@@ -41,7 +42,7 @@ namespace Biz.Interfaces
         /// Cadastra uma empresa
         /// </summary>
         /// <param name="empresa">empresa que será cadastrada</param>
-        public void Insere(LmEmpresa empresa, string responsavel);
+        public void Insere(EmpresaViewModel empresa, string responsavel);
 
     }
 }

@@ -24,8 +24,6 @@ namespace Metalurgica.Controllers
         {
             try
             {
-                UsuarioLoginViewModel test = user;
-
                 LmUsuario usuarioBuscado = _usuarioRepository.Login(user);
 
                 if (usuarioBuscado == null)

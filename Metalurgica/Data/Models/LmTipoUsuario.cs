@@ -9,11 +9,11 @@ public partial class LmTipoUsuario
 
     public string? NmTitulo { get; set; }
 
-    public DateTime? DtCadastro { get; set; }
+    public DateTime DtCadastro { get; set; }
 
     public DateTime? DtAlteracao { get; set; }
 
-    public bool? FlAtivo { get; set; }
+    public bool FlAtivo { get; set; }
 
     public string? DsUltAlteracao { get; set; }
 

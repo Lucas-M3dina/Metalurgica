@@ -1,5 +1,7 @@
 ﻿using Biz.Interfaces;
 using Data.Models;
+using Entities.Empresa;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Metalurgica.Controllers
@@ -15,7 +17,9 @@ namespace Metalurgica.Controllers
             _empresaRepository = empresaRepository;
         }
 
+
         [HttpGet]
+        [Authorize]
         public IActionResult Listar()
         {
             try
@@ -28,13 +32,13 @@ namespace Metalurgica.Controllers
             }
         }
 
-
+        [Authorize]
         [HttpPost]
-        public IActionResult Criar(LmEmpresa u)
+        public IActionResult Criar(EmpresaViewModel e)
         {
             try
             {
-                _empresaRepository.Insere(u, u.NmNome);
+                _empresaRepository.Insere(e, User.Identity.Name);
                 return StatusCode(201);
             }
             catch (Exception Erro)
@@ -44,13 +48,13 @@ namespace Metalurgica.Controllers
         }
 
 
-
+        [Authorize]
         [HttpPut("{id}")]
-        public IActionResult Alterar(LmEmpresa user, int id)
+        public IActionResult Alterar(EmpresaViewModel empresa, int id)
         {
             try
             {
-                _empresaRepository.Atualiza(id, user);
+                _empresaRepository.Atualiza(id, empresa, User.Identity.Name);
                 return StatusCode(200);
             }
             catch (Exception error)
@@ -60,7 +64,7 @@ namespace Metalurgica.Controllers
         }
 
 
-
+        [Authorize]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {

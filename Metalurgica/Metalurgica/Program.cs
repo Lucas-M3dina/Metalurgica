@@ -16,6 +16,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<MetalurgicaEstudoContext>();
 builder.Services.AddScoped<ILmUsuarioService, LmUsuarioService>();
 builder.Services.AddScoped<ILmEmpresaService, LmEmpresaService>();
+builder.Services.AddScoped<ILmElementoService, LmElementoService>();
+builder.Services.AddScoped<ILmEmbalagemService, LmEmbalagemService>();
+builder.Services.AddScoped<ILmLoteService, LmLoteService>();
+builder.Services.AddScoped<ILmProdutoService, LmProdutoService>();
 
 
 
@@ -55,13 +59,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseAuthentication();
-
-app.UseAuthorization();
-
 app.UseHttpsRedirection();
 
 app.UseRouting();
+
+app.UseAuthentication();
+
+app.UseAuthorization();
 
 app.UseEndpoints(endpoints =>
 {

@@ -78,7 +78,6 @@ namespace Biz.Services
             LmUsuario usuario = ctx.ObterPor(u => u.DsEmail == user.email);
             if (usuario != null)
             {
-                user.senha = BCrypt.Net.BCrypt.HashPassword(user.senha);
                 if (BCrypt.Net.BCrypt.Verify(user.senha, usuario.DsSenha))
                 {
                     return usuario;

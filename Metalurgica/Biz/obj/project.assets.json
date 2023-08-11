@@ -3412,11 +3412,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lucaso\\Desktop\\Metalurgica-correcao\\Metalurgica\\Biz\\Biz.csproj",
+      "projectUniqueName": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Biz\\Biz.csproj",
       "projectName": "Biz",
-      "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica-correcao\\Metalurgica\\Biz\\Biz.csproj",
+      "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Biz\\Biz.csproj",
       "packagesPath": "C:\\Users\\lucaso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica-correcao\\Metalurgica\\Biz\\obj\\",
+      "outputPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Biz\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lucaso\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3433,11 +3433,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\lucaso\\Desktop\\Metalurgica-correcao\\Metalurgica\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica-correcao\\Metalurgica\\Data\\Data.csproj"
+            "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Data\\Data.csproj"
             },
-            "C:\\Users\\lucaso\\Desktop\\Metalurgica-correcao\\Metalurgica\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica-correcao\\Metalurgica\\Entities\\Entities.csproj"
+            "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Entities\\Entities.csproj"
             }
           }
         }

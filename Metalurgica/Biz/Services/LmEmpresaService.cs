@@ -1,6 +1,7 @@
 ﻿using Biz.Infra;
 using Biz.Interfaces;
 using Data.Models;
+using Entities.Empresa;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,14 +30,17 @@ namespace Biz.Services
             return ctx.Listar().Where(e => e.FlAtivo == true).ToList();
         }
 
-        public void Atualiza(int id, LmEmpresa empresaAtualizada)
+        public void Atualiza(int id, EmpresaViewModel empresaAtualizada, string responsavel)
         {
 
-            var usuarioBuscado = ConsultaPorID(id);
-            string responsavel = usuarioBuscado.NmNome;
+            var empresaBuscada = ConsultaPorID(id);
+
+            empresaBuscada.NmNome = empresaAtualizada.NmNome;
+            empresaBuscada.DsSegmento = empresaAtualizada.DsSegmento;
+
             
 
-            ctx.Editar(usuarioBuscado, responsavel);
+            ctx.Editar(empresaBuscada, responsavel);
 
         }
 
@@ -55,9 +59,12 @@ namespace Biz.Services
             ctx.Commit();
         }
 
-        public void Insere(LmEmpresa empresa, string responsavel)
+        public void Insere(EmpresaViewModel empresa, string responsavel)
         {
-            ctx.Adicionar(empresa, responsavel);
+            LmEmpresa e = new();
+            e.NmNome = empresa.NmNome;
+            e.DsSegmento = empresa.DsSegmento;
+            ctx.Adicionar(e, responsavel);
             ctx.Commit();
         }
     }

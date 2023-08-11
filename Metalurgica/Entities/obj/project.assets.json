@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lucaso\\Desktop\\Metalurgica-correcao\\Metalurgica\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica-correcao\\Metalurgica\\Entities\\Entities.csproj",
+      "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\lucaso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica-correcao\\Metalurgica\\Entities\\obj\\",
+      "outputPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lucaso\\AppData\\Roaming\\NuGet\\NuGet.Config",
