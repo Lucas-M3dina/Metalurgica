@@ -9,7 +9,7 @@ CREATE TABLE LM_TipoUsuario(
 	Nm_Titulo VARCHAR(12),
 
 	Dt_Cadastro	DATETIME NOT NULL,
-	Dt_Alteracao DATETIME NOT NULL,
+	Dt_Alteracao DATETIME,
 	Fl_Ativo BIT NOT NULL,
 	Ds_UltAlteracao VARCHAR(100)
 );
@@ -23,7 +23,7 @@ CREATE TABLE LM_Usuario(
 	Ds_Senha VARCHAR(60) NOT NULL,
 
 	Dt_Cadastro	DATETIME NOT NULL,
-	Dt_Alteracao DATETIME NOT NULL,
+	Dt_Alteracao DATETIME,
 	Fl_Ativo BIT NOT NULL,
 	Ds_UltAlteracao VARCHAR(100)
 );
@@ -36,7 +36,7 @@ CREATE TABLE LM_Elemento(
 	Ds_ASTM VARCHAR(30) NOT NULL,
 
 	Dt_Cadastro	DATETIME NOT NULL,
-	Dt_Alteracao DATETIME NOT NULL,
+	Dt_Alteracao DATETIME,
 	Fl_Ativo BIT NOT NULL,
 	Ds_UltAlteracao VARCHAR(100)
 );
@@ -48,7 +48,7 @@ CREATE TABLE LM_Produto(
 	Nm_Nome VARCHAR(50) NOT NULL,
 
 	Dt_Cadastro	DATETIME NOT NULL,
-	Dt_Alteracao DATETIME NOT NULL,
+	Dt_Alteracao DATETIME,
 	Fl_Ativo BIT NOT NULL,
 	Ds_UltAlteracao VARCHAR(100)
 );
@@ -59,7 +59,7 @@ CREATE TABLE LM_Embalagem(
 	Nm_Nome VARCHAR(50) NOT NULL,
 
 	Dt_Cadastro	DATETIME NOT NULL,
-	Dt_Alteracao DATETIME NOT NULL,
+	Dt_Alteracao DATETIME,
 	Fl_Ativo BIT NOT NULL,
 	Ds_UltAlteracao VARCHAR(100)
 );
@@ -73,7 +73,7 @@ CREATE TABLE LM_Lote(
 
 
 	Dt_Cadastro	DATETIME NOT NULL,
-	Dt_Alteracao DATETIME NOT NULL,
+	Dt_Alteracao DATETIME,
 	Fl_Ativo BIT NOT NULL,
 	Ds_UltAlteracao VARCHAR(100)
 );
@@ -81,13 +81,12 @@ GO
 
 CREATE TABLE LM_Empresa(
 	Id_Empresa INT PRIMARY KEY IDENTITY,
-	Id_Lote INT FOREIGN KEY REFERENCES LM_Lote(Id_Lote),
 	Ds_Segmento VARCHAR(60) NOT NULL,
 	Nm_Nome VARCHAR(50) NOT NULL,
 
 
 	Dt_Cadastro	DATETIME NOT NULL,
-	Dt_Alteracao DATETIME NOT NULL,
+	Dt_Alteracao DATETIME ,
 	Fl_Ativo BIT NOT NULL,
 	Ds_UltAlteracao VARCHAR(100)
 );
