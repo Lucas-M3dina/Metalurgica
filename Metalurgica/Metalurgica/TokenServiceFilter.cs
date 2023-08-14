@@ -18,6 +18,7 @@ namespace Metalurgica
                 Subject = new ClaimsIdentity(new[]
                 {
                     new Claim(ClaimTypes.Name, user.NmNome),
+                    new Claim("IdUsuario", user.IdUsuario.ToString()),
                     new Claim(ClaimTypes.Role, user.IdTipoUsuario.ToString())
                 }),
                 Expires = DateTime.UtcNow.AddHours(8),

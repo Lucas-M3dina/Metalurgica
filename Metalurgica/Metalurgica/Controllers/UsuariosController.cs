@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Biz.Interfaces;
 using Data.Models;
+using System.Dynamic;
+using System.Security.Claims;
 
 namespace Metalurgica.Controllers
 {
@@ -75,7 +77,23 @@ namespace Metalurgica.Controllers
             }
         }
 
-        
+        [HttpGet("me")]
+        public IActionResult GetMe()
+        {
+            try
+            {
+                int id = int.Parse(User.FindFirstValue("IdUsuario"));
+                return Ok(_usuarioRepository.ConsultaPorID(id));
+            }
+            catch (Exception error)
+            {
+                return BadRequest(error);
+            }
+        }
+
+
+
+
 
 
     }
