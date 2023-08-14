@@ -57,6 +57,17 @@ namespace Biz.Services
             return ctx.ObterPor(u => u.IdUsuario == id);
         }
 
+        public UsuarioViewModel GetMe(int id)
+        {
+            var usuarioBuscado = ctx.ObterPor(u => u.IdUsuario == id);
+            UsuarioViewModel usuario = new();
+            usuario.IdTipoUsuario = usuarioBuscado.IdTipoUsuario;
+            usuario.nome = usuarioBuscado.NmNome;
+            usuario.email = usuarioBuscado.DsEmail;
+
+            return usuario;
+        }
+
 
         public void Exclui(int id)
         {

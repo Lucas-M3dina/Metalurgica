@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ty+dwgFF+lHJgzC7IzlR3wBC0TbmQn0sh1Xb5NEbEvNJ7FV8XCqdXH3DqhADi8P0nJlndOf9z70tUmzFZeZzug==",
+  "dgSpecHash": "3pHlB9VV+VUmDZOFPzHx/5hr45f3CQwaLFM5i0sTLG8LASe5jAmu1a7QaEDfNZoU9jPAsUmcNzYYBHUu/myfNw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Data\\Data.csproj",
+  "projectFilePath": "C:\\Users\\lucaso\\Desktop\\backend\\Metalurgica\\Metalurgica\\Data\\Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucaso\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\lucaso\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -22,6 +22,16 @@ builder.Services.AddScoped<ILmLoteService, LmLoteService>();
 builder.Services.AddScoped<ILmProdutoService, LmProdutoService>();
 
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: "AllowAnyOrigin",
+                      builder =>
+                      {
+                          builder.AllowAnyOrigin();
+                          builder.AllowAnyHeader();
+                      });
+});
+
 
 var key = Encoding.ASCII.GetBytes("testandoJWTtoken");
 
@@ -58,6 +68,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("AllowAnyOrigin");
 
 app.UseHttpsRedirection();
 

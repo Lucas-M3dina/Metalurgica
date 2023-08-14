@@ -4740,11 +4740,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Metalurgica\\Metalurgica.csproj",
+      "projectUniqueName": "C:\\Users\\lucaso\\Desktop\\backend\\Metalurgica\\Metalurgica\\Metalurgica\\Metalurgica.csproj",
       "projectName": "Metalurgica",
-      "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Metalurgica\\Metalurgica.csproj",
+      "projectPath": "C:\\Users\\lucaso\\Desktop\\backend\\Metalurgica\\Metalurgica\\Metalurgica\\Metalurgica.csproj",
       "packagesPath": "C:\\Users\\lucaso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Metalurgica\\obj\\",
+      "outputPath": "C:\\Users\\lucaso\\Desktop\\backend\\Metalurgica\\Metalurgica\\Metalurgica\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lucaso\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4761,14 +4761,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Biz\\Biz.csproj": {
-              "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Biz\\Biz.csproj"
+            "C:\\Users\\lucaso\\Desktop\\backend\\Metalurgica\\Metalurgica\\Biz\\Biz.csproj": {
+              "projectPath": "C:\\Users\\lucaso\\Desktop\\backend\\Metalurgica\\Metalurgica\\Biz\\Biz.csproj"
             },
-            "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Data\\Data.csproj"
+            "C:\\Users\\lucaso\\Desktop\\backend\\Metalurgica\\Metalurgica\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\lucaso\\Desktop\\backend\\Metalurgica\\Metalurgica\\Data\\Data.csproj"
             },
-            "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Entities\\Entities.csproj"
+            "C:\\Users\\lucaso\\Desktop\\backend\\Metalurgica\\Metalurgica\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\lucaso\\Desktop\\backend\\Metalurgica\\Metalurgica\\Entities\\Entities.csproj"
             }
           }
         }

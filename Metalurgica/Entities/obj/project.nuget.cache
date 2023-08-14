@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pWxT9AtlcYILTx68/KsopFuZXDPKZbuki0F0Pcooxmf2dB8K2UcRbhnDDvaAdMcLIMY6TCNUJmw1KBiPA7qEGw==",
+  "dgSpecHash": "gPA00IT8M/jSw/GeqKe+l5kOvDeC/3X8m72/use8KC7DhS+yqF1SXc46J7QN9l/cWdSTYtutnX1m5VJgVqtarA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucaso\\Desktop\\Metalurgica\\Metalurgica\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\lucaso\\Desktop\\backend\\Metalurgica\\Metalurgica\\Entities\\Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

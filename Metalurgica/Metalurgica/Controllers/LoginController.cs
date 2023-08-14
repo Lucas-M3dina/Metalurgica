@@ -35,7 +35,6 @@ namespace Metalurgica.Controllers
                 string token = TokenServiceFilter.GerarToken(usuarioBuscado);
                 usuarioBuscado.DsSenha = "";
                 return Ok(new {
-                    user = usuarioBuscado, 
                     token = token
                 });
 

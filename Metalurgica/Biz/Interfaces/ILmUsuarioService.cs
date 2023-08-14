@@ -46,6 +46,14 @@ namespace Biz.Interfaces
         /// <param name="user">usuário que será comparado com o do banco</param>
         /// <returns>O usuario correspondente a senha email</returns>
         public LmUsuario Login(UsuarioLoginViewModel user);
+
+
+        /// <summary>
+        /// Busca um usuário através do ID
+        /// </summary>
+        /// <param name="id">ID do usuário que será buscado</param>
+        /// <returns>Um usuário buscado com dados filtrados</returns>
+        public UsuarioViewModel GetMe(int id);
     }
 
 

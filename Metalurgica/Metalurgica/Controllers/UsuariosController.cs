@@ -83,7 +83,7 @@ namespace Metalurgica.Controllers
             try
             {
                 int id = int.Parse(User.FindFirstValue("IdUsuario"));
-                return Ok(_usuarioRepository.ConsultaPorID(id));
+                return Ok(_usuarioRepository.GetMe(id));
             }
             catch (Exception error)
             {
