@@ -1,0 +1,38 @@
+.mural-dashboard{
+  border-radius: 7.312px;
+  box-shadow: 0px 4.178187370300293px 8.356374740600586px 0px rgba(0, 0, 0, 0.45);
+  width: 80%;
+  height: 250px;
+  padding: 20px
+}
+
+.titulo-mural{
+  color: #2EB88E;
+  font-family: Arvo;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.box-vazio-mural{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.msg-animacao{
+  height: 332px;
+  position: relative;
+  bottom: 105px;
+}
+
+.texto-vazio-mural{
+  color: #CCC;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  bottom: 195px;
+}

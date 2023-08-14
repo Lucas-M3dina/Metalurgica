@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
+import { UsuarioService } from 'src/app/service/usuario.service';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +13,9 @@ export class LoginComponent implements OnInit {
   formulario! : FormGroup
 
   constructor(
-    private formBuilder : FormBuilder
+    private formBuilder : FormBuilder,
+    private service: UsuarioService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -22,7 +26,18 @@ export class LoginComponent implements OnInit {
   }
 
   login() : void{
-    console.log(this.formulario);
+    const email = this.formulario.controls['Email']?.value
+    const senha = this.formulario.controls['Senha']?.value
+
+    this.service.Login(email, senha).subscribe(
+      (response) => {
+        localStorage.setItem('token', response.token);
+        this.router.navigate(["/dashboard"])
+      },
+      () => {
+        localStorage.clear()
+      }
+    )
   }
 
 }

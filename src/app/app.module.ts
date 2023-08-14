@@ -8,6 +8,8 @@ import { InputDefaultComponent } from './components/shared/input/input-default/i
 import {ReactiveFormsModule } from '@angular/forms';
 import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MuralComponent } from './components/dashboard/mural/mural.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     InputDefaultComponent,
     SidebarComponent,
     DashboardComponent,
+    MuralComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

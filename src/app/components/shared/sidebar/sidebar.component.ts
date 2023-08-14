@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { UsuarioService } from 'src/app/service/usuario.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,10 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router : Router,
+    private service : UsuarioService
+    ) { }
+
+  nome! : string
+  id! : number
 
   ngOnInit(): void {
     this.estilizandoLogout()
+    this.GetMe()
+
   }
 
   estilizandoLogout(){
@@ -32,7 +42,23 @@ export class SidebarComponent implements OnInit {
         texto.style.color = '#DADADA'
       }
     });
+  }
 
+  Logout(){
+    localStorage.clear()
+    this.router.navigate(["/login"])
+  }
+
+  GetMe(){
+    this.service.GetMe().subscribe(
+      (response) => {
+        this.nome = response.nome
+        this.id = response.idTipoUsuario
+      },
+      () => {
+
+      }
+    )
   }
 
 }
