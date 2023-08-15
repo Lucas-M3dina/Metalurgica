@@ -44,7 +44,7 @@ export class LoginComponent implements OnInit {
 
         setTimeout(()=> {
           this.loading = false
-          this.msgErro = 'Algo deu errado, verifique seu email e senha e tente novamente'
+          this.msgErro = 'Algo deu errado, verifique seu email e sua senha e tente novamente'
         }, 2000)
       }
     )

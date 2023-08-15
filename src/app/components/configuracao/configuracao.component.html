@@ -1,0 +1,48 @@
+<main class="main-configuracao">
+  <app-sidebar></app-sidebar>
+  <div class="container-right-configuracao">
+    <div class="box-formulario-configuracao">
+      <img class="logo-configuracao" src="../../../assets/Logo.svg" alt="Logo medina">
+      <form class="formulario-configuracao" [formGroup]="formulario" *ngIf="formulario">
+        <div class="container-input-configuracao">
+          <app-input-default
+          [formulario]="formulario"
+          class="input-configuracao"
+          [labelInput]="'Nome'"
+          [type]="'text'"
+          [placeholder]="'Digite seu nome'"
+        ></app-input-default>
+
+        <app-input-default
+          [formulario]="formulario"
+          class="input-configuracao"
+          [labelInput]="'Email'"
+          [type]="'email'"
+          [placeholder]="'Digite seu email'"
+        ></app-input-default>
+        </div>
+
+        <div class="container-input-configuracao">
+          <app-input-default
+          [formulario]="formulario"
+          class="input-configuracao"
+          [labelInput]="'Senha'"
+          [type]="'password'"
+          [placeholder]="'Digite sua senha'"
+        ></app-input-default>
+
+          <app-input-default
+          [formulario]="formulario"
+          class="input-configuracao"
+          [labelInput]="'Confirme sua senha'"
+          [type]="'password'"
+          [placeholder]="'Confirme sua senha'"
+        ></app-input-default>
+        </div>
+
+        <button [disabled]="formulario.invalid" (click)="AtualizarUsuario()" class="btn-default"><img *ngIf="loading" class="loading-animacao" src="../../../assets/loading.gif"> Atualizar</button>
+
+      </form>
+    </div>
+  </div>
+</main>

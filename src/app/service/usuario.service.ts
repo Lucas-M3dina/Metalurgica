@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Token, Usuario } from '../interface/interfaces';
+import { Token, UserAlterar, Usuario } from '../interface/interfaces';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -21,6 +21,13 @@ export class UsuarioService {
   GetMe(): Observable<Usuario>{
     const headers = new HttpHeaders().set('Authorization', `Bearer ${localStorage.getItem("token")}`);
     return this.http.get<Usuario>(`${this.API}usuarios/me`, { headers });
+  }
+
+  Cadastrar(nmNome : string, dsEmail : string, dsSenha : string) : Observable<UserAlterar>{
+    const user : UserAlterar = {nmNome, dsEmail, dsSenha}
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${localStorage.getItem("token")}`);
+
+    return this.http.put<UserAlterar>(this.API + "usuarios", user, {headers})
   }
 
 

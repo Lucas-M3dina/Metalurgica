@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoteService } from 'src/app/service/lote.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  contagem : number = 0
+
+  constructor(private service : LoteService) { }
 
   ngOnInit(): void {
+    this.ContagemLote()
   }
+
+  ContagemLote() {
+    this.service.ListarLote().subscribe(
+      (response) => {
+        console.log(response);
+        this.contagem =  response.length
+      },
+      () => {
+        localStorage.clear()
+      }
+    );
+  }
+
 
 }

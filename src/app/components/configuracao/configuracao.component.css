@@ -1,0 +1,67 @@
+.main-configuracao{
+  display: flex;
+}
+
+.container-right-configuracao{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 30px;
+  width: 100%;
+}
+
+.box-formulario-configuracao{
+  width: 80%;
+  background: #FFF;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  gap: 50px;
+}
+
+.logo-configuracao
+{
+  width: 120px;
+}
+
+.formulario-configuracao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.container-input-configuracao{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.input-configuracao{
+  width: 45%;
+}
+
+.btn-default{
+  border-radius: 4px;
+  background: #17211E;
+  color: #FFF;
+  font-family: Arvo;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 30px;
+  margin-top: 40px;
+}
+
+.btn-default:hover{
+  cursor: pointer;
+  background: #243330;
+}
+
+.loading-animacao{
+  width: 15px;
+  margin-right: 6px;
+}

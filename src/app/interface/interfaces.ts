@@ -8,4 +8,9 @@ export interface Usuario{
   email : string
 }
 
+export interface UserAlterar{
+  nmNome : string,
+  dsSenha : string,
+  dsEmail : string,
+}
 

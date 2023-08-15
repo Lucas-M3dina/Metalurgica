@@ -11,6 +11,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MuralComponent } from './components/dashboard/mural/mural.component';
 import { CardContagemComponent } from './components/dashboard/card-contagem/card-contagem.component';
+import { ConfiguracaoComponent } from './components/configuracao/configuracao.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CardContagemComponent } from './components/dashboard/card-contagem/card
     DashboardComponent,
     MuralComponent,
     CardContagemComponent,
+    ConfiguracaoComponent,
   ],
   imports: [
     BrowserModule,
