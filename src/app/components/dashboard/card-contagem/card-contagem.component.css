@@ -1,0 +1,36 @@
+.container-card-dashboard{
+  border-radius: 6px;
+  background: radial-gradient(50% 50.00% at 50% 50.00%, #1C2523 83.33%, #252626 100%);
+  box-shadow: 0px 4.178187370300293px 8.356374740600586px 0px rgba(0, 0, 0, 0.45);
+  width: 100%;
+  max-width: 300px;
+  height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.icon-card-dashboard{
+  width: 70px;
+}
+
+.titulo-card-dashboard{
+  color: #FFF;
+  font-family: Arvo;
+  font-size: 18px;
+}
+
+.contagem-numeros{
+  font-family: Roboto;
+  font-size: 90px;
+  font-weight: 300;
+  line-height: 90px;
+
+  background: linear-gradient(180deg, #2EB88E 0%, #C3D6D0 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

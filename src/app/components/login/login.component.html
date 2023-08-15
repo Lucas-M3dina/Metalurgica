@@ -17,7 +17,17 @@
   <div class="right-box-login">
       <img class='logo-login' src="../../../assets/Logo.svg" alt="Logo"/>
       <form class='form-login' [formGroup]="formulario">
+        <span class="erro-login span-error-login">{{msgErro}}</span>
+        <div class="container-input-erro">
           <app-input-default [formulario]="formulario" class="input-login" [labelInput]="'Email'" [type]="'email'" [placeholder]="'Digite seu email'" ></app-input-default>
+          <div class="erro-login" *ngIf="formulario?.get('Email')?.hasError('required') && formulario.get('Email')?.touched">
+            O campo de email é obrigatório.
+          </div>
+          <div class="erro-login" *ngIf="formulario.get('Email')?.hasError('email') && formulario.get('Email')?.touched">
+            Por favor, insira um email válido.
+          </div>
+        </div>
+        <div class="container-input-erro">
           <app-input-default
           [formulario]="formulario"
           class="input-login"
@@ -25,7 +35,13 @@
           [type]="'password'"
           [placeholder]="'Digite sua senha'"></app-input-default>
 
-        <button (click)="login()" class="btn-default">Entrar</button>
+          <div class="erro-login" *ngIf="formulario?.get('Senha')?.hasError('required') && formulario.get('Senha')?.touched">
+            O campo de senha é obrigatório.
+          </div>
+        </div>
+
+
+        <button [disabled]="formulario.invalid" (click)="login()" class="btn-default"><img *ngIf="loading" class="loading-animacao" src="../../../assets/loading.gif"> Entrar</button>
       </form>
   </div>
 

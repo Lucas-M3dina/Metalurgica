@@ -10,6 +10,7 @@ import { SidebarComponent } from './components/shared/sidebar/sidebar.component'
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MuralComponent } from './components/dashboard/mural/mural.component';
+import { CardContagemComponent } from './components/dashboard/card-contagem/card-contagem.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { MuralComponent } from './components/dashboard/mural/mural.component';
     SidebarComponent,
     DashboardComponent,
     MuralComponent,
+    CardContagemComponent,
   ],
   imports: [
     BrowserModule,

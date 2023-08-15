@@ -111,6 +111,32 @@
   gap: 20px;
 }
 
+.erro-login{
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(192, 71, 71);
+  width: 80%;
+  margin-top: 5px;
+  animation-name: mostrar;
+  animation-duration: 0.5s;
+}
+
+.container-input-erro{
+  width: 80%;
+}
+
+.span-error-login{
+  text-align: center;
+  animation-name: mostrar;
+  animation-duration: 3s;
+}
+
+.loading-animacao{
+  width: 15px;
+  margin-right: 6px;
+}
+
 @media (max-width:1360px){
 
   /* LEFT BOX */
@@ -140,4 +166,10 @@
   }
 
 
+}
+
+
+@keyframes mostrar {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
