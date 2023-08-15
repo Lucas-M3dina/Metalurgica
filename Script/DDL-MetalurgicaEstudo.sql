@@ -65,20 +65,6 @@ CREATE TABLE LM_Embalagem(
 );
 GO
 
-
-CREATE TABLE LM_Lote(
-	Id_Lote INT PRIMARY KEY IDENTITY,
-	Id_Produto INT FOREIGN KEY REFERENCES LM_Produto(Id_Produto),
-	Id_Embalagem INT FOREIGN KEY REFERENCES LM_Embalagem(Id_Embalagem),
-
-
-	Dt_Cadastro	DATETIME NOT NULL,
-	Dt_Alteracao DATETIME,
-	Fl_Ativo BIT NOT NULL,
-	Ds_UltAlteracao VARCHAR(100)
-);
-GO
-
 CREATE TABLE LM_Empresa(
 	Id_Empresa INT PRIMARY KEY IDENTITY,
 	Ds_Segmento VARCHAR(60) NOT NULL,
@@ -90,3 +76,23 @@ CREATE TABLE LM_Empresa(
 	Fl_Ativo BIT NOT NULL,
 	Ds_UltAlteracao VARCHAR(100)
 );
+
+
+
+CREATE TABLE LM_Lote(
+	Id_Lote INT PRIMARY KEY IDENTITY,
+	Id_Produto INT FOREIGN KEY REFERENCES LM_Produto(Id_Produto),
+	Id_Embalagem INT FOREIGN KEY REFERENCES LM_Embalagem(Id_Embalagem),
+	Id_Empresa INT FOREIGN KEY REFERENCES LM_Empresa(Id_Empresa),
+
+	Nm_MetodologiaAnaliseGranumetrica VARCHAR(80),
+	Ds_observacoes VARCHAR(300),
+
+
+	Dt_Cadastro	DATETIME NOT NULL,
+	Dt_Alteracao DATETIME,
+	Fl_Ativo BIT NOT NULL,
+	Ds_UltAlteracao VARCHAR(100)
+);
+GO
+
