@@ -49,6 +49,7 @@ namespace Biz.Services
             }
 
             ctx.Editar(usuarioBuscado, responsavel);
+            ctx.Commit();
 
         }
 

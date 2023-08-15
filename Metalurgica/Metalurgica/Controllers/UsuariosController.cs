@@ -47,11 +47,12 @@ namespace Metalurgica.Controllers
 
         
 
-        [HttpPut("{id}")]
-        public IActionResult Alterar(LmUsuario user, int id)
+        [HttpPut]
+        public IActionResult Alterar(LmUsuario user)
         {
             try
             {
+                int id = int.Parse(User.FindFirstValue("IdUsuario"));
                 _usuarioRepository.Atualiza(id, user);
                 return StatusCode(200);
             }

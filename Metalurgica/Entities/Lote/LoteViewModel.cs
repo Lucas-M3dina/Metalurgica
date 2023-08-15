@@ -12,5 +12,11 @@ namespace Entities.Lote
 
         public int? IdEmbalagem { get; set; }
 
+        public int? IdEmpresa { get; set; }
+
+        public string? NmMetodologiaAnaliseGranumetrica { get; set; }
+
+        public string? DsObservacoes { get; set; }
+
     }
 }

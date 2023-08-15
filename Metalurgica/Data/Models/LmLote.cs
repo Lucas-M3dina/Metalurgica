@@ -11,6 +11,12 @@ public partial class LmLote
 
     public int? IdEmbalagem { get; set; }
 
+    public int? IdEmpresa { get; set; }
+
+    public string? NmMetodologiaAnaliseGranumetrica { get; set; }
+
+    public string? DsObservacoes { get; set; }
+
     public DateTime DtCadastro { get; set; }
 
     public DateTime? DtAlteracao { get; set; }
@@ -20,6 +26,8 @@ public partial class LmLote
     public string? DsUltAlteracao { get; set; }
 
     public virtual LmEmbalagem? IdEmbalagemNavigation { get; set; }
+
+    public virtual LmEmpresa? IdEmpresaNavigation { get; set; }
 
     public virtual LmProduto? IdProdutoNavigation { get; set; }
 }

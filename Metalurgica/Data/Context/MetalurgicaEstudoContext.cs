@@ -38,7 +38,7 @@ public partial class MetalurgicaEstudoContext : DbContext
     {
         modelBuilder.Entity<LmElemento>(entity =>
         {
-            entity.HasKey(e => e.IdElemento).HasName("PK__LM_Eleme__D20D2C66DDF6FD71");
+            entity.HasKey(e => e.IdElemento).HasName("PK__LM_Eleme__D20D2C6646B5FD99");
 
             entity.ToTable("LM_Elemento");
 
@@ -70,7 +70,7 @@ public partial class MetalurgicaEstudoContext : DbContext
 
         modelBuilder.Entity<LmEmbalagem>(entity =>
         {
-            entity.HasKey(e => e.IdEmbalagem).HasName("PK__LM_Embal__0931670CFDD3FE02");
+            entity.HasKey(e => e.IdEmbalagem).HasName("PK__LM_Embal__0931670C7BD55FC9");
 
             entity.ToTable("LM_Embalagem");
 
@@ -94,7 +94,7 @@ public partial class MetalurgicaEstudoContext : DbContext
 
         modelBuilder.Entity<LmEmpresa>(entity =>
         {
-            entity.HasKey(e => e.IdEmpresa).HasName("PK__LM_Empre__443B3D9D092C23A8");
+            entity.HasKey(e => e.IdEmpresa).HasName("PK__LM_Empre__443B3D9DB4F15CBE");
 
             entity.ToTable("LM_Empresa");
 
@@ -122,11 +122,15 @@ public partial class MetalurgicaEstudoContext : DbContext
 
         modelBuilder.Entity<LmLote>(entity =>
         {
-            entity.HasKey(e => e.IdLote).HasName("PK__LM_Lote__134A915DC54EDBB7");
+            entity.HasKey(e => e.IdLote).HasName("PK__LM_Lote__134A915DC3624A80");
 
             entity.ToTable("LM_Lote");
 
             entity.Property(e => e.IdLote).HasColumnName("Id_Lote");
+            entity.Property(e => e.DsObservacoes)
+                .HasMaxLength(300)
+                .IsUnicode(false)
+                .HasColumnName("Ds_observacoes");
             entity.Property(e => e.DsUltAlteracao)
                 .HasMaxLength(100)
                 .IsUnicode(false)
@@ -139,20 +143,29 @@ public partial class MetalurgicaEstudoContext : DbContext
                 .HasColumnName("Dt_Cadastro");
             entity.Property(e => e.FlAtivo).HasColumnName("Fl_Ativo");
             entity.Property(e => e.IdEmbalagem).HasColumnName("Id_Embalagem");
+            entity.Property(e => e.IdEmpresa).HasColumnName("Id_Empresa");
             entity.Property(e => e.IdProduto).HasColumnName("Id_Produto");
+            entity.Property(e => e.NmMetodologiaAnaliseGranumetrica)
+                .HasMaxLength(80)
+                .IsUnicode(false)
+                .HasColumnName("Nm_MetodologiaAnaliseGranumetrica");
 
             entity.HasOne(d => d.IdEmbalagemNavigation).WithMany(p => p.LmLotes)
                 .HasForeignKey(d => d.IdEmbalagem)
-                .HasConstraintName("FK__LM_Lote__Id_Emba__31EC6D26");
+                .HasConstraintName("FK__LM_Lote__Id_Emba__33D4B598");
+
+            entity.HasOne(d => d.IdEmpresaNavigation).WithMany(p => p.LmLotes)
+                .HasForeignKey(d => d.IdEmpresa)
+                .HasConstraintName("FK__LM_Lote__Id_Empr__34C8D9D1");
 
             entity.HasOne(d => d.IdProdutoNavigation).WithMany(p => p.LmLotes)
                 .HasForeignKey(d => d.IdProduto)
-                .HasConstraintName("FK__LM_Lote__Id_Prod__30F848ED");
+                .HasConstraintName("FK__LM_Lote__Id_Prod__32E0915F");
         });
 
         modelBuilder.Entity<LmProduto>(entity =>
         {
-            entity.HasKey(e => e.IdProduto).HasName("PK__LM_Produ__94E704D8CA8D7AD8");
+            entity.HasKey(e => e.IdProduto).HasName("PK__LM_Produ__94E704D813333BFE");
 
             entity.ToTable("LM_Produto");
 
@@ -181,7 +194,7 @@ public partial class MetalurgicaEstudoContext : DbContext
 
         modelBuilder.Entity<LmTipoUsuario>(entity =>
         {
-            entity.HasKey(e => e.IdTipoUsuario).HasName("PK__LM_TipoU__622D85AB53DF8EF0");
+            entity.HasKey(e => e.IdTipoUsuario).HasName("PK__LM_TipoU__622D85AB3A709E04");
 
             entity.ToTable("LM_TipoUsuario");
 
@@ -205,11 +218,11 @@ public partial class MetalurgicaEstudoContext : DbContext
 
         modelBuilder.Entity<LmUsuario>(entity =>
         {
-            entity.HasKey(e => e.IdUsuario).HasName("PK__LM_Usuar__63C76BE22B396751");
+            entity.HasKey(e => e.IdUsuario).HasName("PK__LM_Usuar__63C76BE243F4A3EF");
 
             entity.ToTable("LM_Usuario");
 
-            entity.HasIndex(e => e.DsEmail, "UQ__LM_Usuar__7937E3FC592FA800").IsUnique();
+            entity.HasIndex(e => e.DsEmail, "UQ__LM_Usuar__7937E3FC3AABA828").IsUnique();
 
             entity.Property(e => e.IdUsuario).HasColumnName("Id_Usuario");
             entity.Property(e => e.DsEmail)

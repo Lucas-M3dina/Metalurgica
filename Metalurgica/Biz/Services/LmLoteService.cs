@@ -3,6 +3,7 @@ using Biz.Interfaces;
 using Data.Models;
 using Entities;
 using Entities.Lote;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;

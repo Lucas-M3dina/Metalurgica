@@ -18,4 +18,6 @@ public partial class LmEmpresa
     public bool FlAtivo { get; set; }
 
     public string? DsUltAlteracao { get; set; }
+
+    public virtual ICollection<LmLote> LmLotes { get; set; } = new List<LmLote>();
 }
