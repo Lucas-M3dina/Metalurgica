@@ -12,6 +12,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { MuralComponent } from './components/dashboard/mural/mural.component';
 import { CardContagemComponent } from './components/dashboard/card-contagem/card-contagem.component';
 import { ConfiguracaoComponent } from './components/configuracao/configuracao.component';
+import { DialogOkComponent } from './components/shared/dialog/dialog-ok/dialog-ok.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -23,12 +26,17 @@ import { ConfiguracaoComponent } from './components/configuracao/configuracao.co
     MuralComponent,
     CardContagemComponent,
     ConfiguracaoComponent,
+    DialogOkComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatDialogModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

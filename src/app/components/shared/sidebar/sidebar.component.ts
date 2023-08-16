@@ -14,12 +14,13 @@ export class SidebarComponent implements OnInit {
     private service : UsuarioService
     ) { }
 
-  nome! : string
-  id! : number
+  nome! : string | null
+  id! : number | null
 
   ngOnInit(): void {
     this.estilizandoLogout()
-    this.GetMe()
+    this.nome = localStorage?.getItem("nome")
+    this.id = Number(localStorage?.getItem("id"))
 
   }
 
@@ -47,18 +48,6 @@ export class SidebarComponent implements OnInit {
   Logout(){
     localStorage.clear()
     this.router.navigate(["/login"])
-  }
-
-  GetMe(){
-    this.service.GetMe().subscribe(
-      (response) => {
-        this.nome = response.nome
-        this.id = response.idTipoUsuario
-      },
-      () => {
-
-      }
-    )
   }
 
 }

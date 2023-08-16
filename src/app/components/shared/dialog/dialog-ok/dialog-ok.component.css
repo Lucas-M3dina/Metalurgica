@@ -1,0 +1,40 @@
+::ng-deep.mat-dialog-container {
+  position: fixed !important;
+}
+
+.msgpush-ok{
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 20px 60px;
+  background-color: #1c2523;
+  border-left: 5px solid green;
+  border-right: 5px solid green;
+  border-radius: 5px;
+  animation-name: mostrar;
+  animation-duration: 2s;
+  opacity: 0.9;
+}
+
+.push-text{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 5px;
+
+}
+
+
+
+@keyframes mostrar {
+  from {
+    opacity: 0;
+    top: -10px;
+
+  }
+  to   {
+    opacity: 0.9;
+    top: 15px;
+  }
+}

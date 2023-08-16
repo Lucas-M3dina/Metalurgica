@@ -36,6 +36,8 @@ export class LoginComponent implements OnInit {
     this.service.Login(email, senha).subscribe(
       (response) => {
         localStorage.setItem('token', response.token);
+        this.GetMe()
+
         this.router.navigate(["/dashboard"])
         this.loading = false
       },
@@ -49,5 +51,21 @@ export class LoginComponent implements OnInit {
       }
     )
   }
+
+  GetMe(){
+    this.service.GetMe().subscribe(
+      (response) => {
+        localStorage.setItem('nome', response.nome);
+        localStorage.setItem('id', response.idTipoUsuario.toString());
+        localStorage.setItem('email', response.email);
+
+      },
+      () => {
+
+      }
+    )
+  }
+
+
 
 }

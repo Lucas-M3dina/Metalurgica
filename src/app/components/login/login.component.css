@@ -1,3 +1,5 @@
+
+
 .container{
   display: flex;
   justify-content: space-between;
@@ -111,16 +113,6 @@
   gap: 20px;
 }
 
-.erro-login{
-  font-family: Roboto;
-  font-size: 12px;
-  font-weight: 700;
-  color: rgb(192, 71, 71);
-  width: 80%;
-  margin-top: 5px;
-  animation-name: mostrar;
-  animation-duration: 0.5s;
-}
 
 .container-input-erro{
   width: 80%;
@@ -130,6 +122,17 @@
   text-align: center;
   animation-name: mostrar;
   animation-duration: 3s;
+}
+
+.erro{
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(192, 71, 71);
+  width: 80%;
+  margin-top: 5px;
+  animation-name: mostrar;
+  animation-duration: 0.5s;
 }
 
 .loading-animacao{

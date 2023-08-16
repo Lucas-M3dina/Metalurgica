@@ -11,6 +11,7 @@ export class InputDefaultComponent implements OnInit {
   @Input() labelInput : string = '';
   @Input() type : string = '';
   @Input() placeholder : string = '';
+  @Input() valor : string | null = '';
   @Input() formulario! : FormGroup;
 
   constructor() { }

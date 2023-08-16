@@ -4,45 +4,84 @@
     <div class="box-formulario-configuracao">
       <img class="logo-configuracao" src="../../../assets/Logo.svg" alt="Logo medina">
       <form class="formulario-configuracao" [formGroup]="formulario" *ngIf="formulario">
+        <span class="erro" style="text-align: center;">{{msgErro}}</span>
         <div class="container-input-configuracao">
-          <app-input-default
-          [formulario]="formulario"
-          class="input-configuracao"
-          [labelInput]="'Nome'"
-          [type]="'text'"
-          [placeholder]="'Digite seu nome'"
-        ></app-input-default>
+          <div class="container-erro">
+              <app-input-default
+                [formulario]="formulario"
+                class="input-configuracao"
+                [labelInput]="'Nome'"
+                [type]="'text'"
+                [placeholder]="'Digite seu nome'"
+              ></app-input-default>
 
-        <app-input-default
-          [formulario]="formulario"
-          class="input-configuracao"
-          [labelInput]="'Email'"
-          [type]="'email'"
-          [placeholder]="'Digite seu email'"
-        ></app-input-default>
+              <div class="erro" *ngIf="formulario?.get('Nome')?.hasError('required') && formulario.get('Nome')?.touched">
+                O campo de nome é obrigatório.
+              </div>
+          </div>
+
+          <div class="container-erro">
+            <app-input-default
+              [formulario]="formulario"
+              class="input-configuracao"
+              [labelInput]="'Email'"
+              [type]="'email'"
+              [placeholder]="'Digite seu email'"
+            ></app-input-default>
+
+            <div class="erro" *ngIf="formulario?.get('Email')?.hasError('required') && formulario.get('Email')?.touched">
+              O campo de email é obrigatório.
+            </div>
+            <div class="erro" *ngIf="formulario.get('Email')?.hasError('email') && formulario.get('Email')?.touched">
+              Por favor, insira um email válido.
+            </div>
+          </div>
+
         </div>
 
         <div class="container-input-configuracao">
-          <app-input-default
-          [formulario]="formulario"
-          class="input-configuracao"
-          [labelInput]="'Senha'"
-          [type]="'password'"
-          [placeholder]="'Digite sua senha'"
-        ></app-input-default>
 
-          <app-input-default
-          [formulario]="formulario"
-          class="input-configuracao"
-          [labelInput]="'Confirme sua senha'"
-          [type]="'password'"
-          [placeholder]="'Confirme sua senha'"
-        ></app-input-default>
+          <div class="container-erro">
+            <app-input-default
+            [formulario]="formulario"
+            class="input-configuracao"
+            [labelInput]="'Senha'"
+            [type]="'password'"
+            [placeholder]="'Digite sua senha'"
+          ></app-input-default>
+
+          <div class="erro" *ngIf="formulario?.get('Senha')?.hasError('required') && formulario.get('Senha')?.touched">
+            O campo de senha é obrigatório.
+          </div>
+          </div>
+
+          <div class="container-erro">
+            <app-input-default
+            [formulario]="formulario"
+            class="input-configuracao"
+            [labelInput]="'Confirme sua senha'"
+            [type]="'password'"
+            [placeholder]="'Confirme sua senha'"
+           ></app-input-default>
+
+           <div class="erro" *ngIf="formulario?.get('Confirme')?.hasError('required') && formulario.get('Confirme')?.touched">
+            O campo de confirmação de senha é obrigatório.
+           </div>
+          </div>
         </div>
+
+        <div class="erro" style="text-align: center;" *ngIf="formulario?.errors?.['erroDiferentes'] && formulario.get('Confirme')?.touched">
+          O campo de confirmação de senha e o campo de senha precisam ser iguais
+        </div>
+
+
 
         <button [disabled]="formulario.invalid" (click)="AtualizarUsuario()" class="btn-default"><img *ngIf="loading" class="loading-animacao" src="../../../assets/loading.gif"> Atualizar</button>
 
       </form>
     </div>
   </div>
+
 </main>
+
+
