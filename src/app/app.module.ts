@@ -15,6 +15,7 @@ import { ConfiguracaoComponent } from './components/configuracao/configuracao.co
 import { DialogOkComponent } from './components/shared/dialog/dialog-ok/dialog-ok.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
+import { ListagemLoteComponent } from './components/listagem-lote/listagem-lote.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     CardContagemComponent,
     ConfiguracaoComponent,
     DialogOkComponent,
+    ListagemLoteComponent,
 
   ],
   imports: [

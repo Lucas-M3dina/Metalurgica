@@ -4,6 +4,7 @@ import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AutorizadoGuard } from './guard/autorizado.guard';
 import { ConfiguracaoComponent } from './components/configuracao/configuracao.component';
+import { ListagemLoteComponent } from './components/listagem-lote/listagem-lote.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,11 @@ const routes: Routes = [
   {
     path: 'configuracao',
     component: ConfiguracaoComponent,
+    canActivate: [AutorizadoGuard]
+  },
+  {
+    path: 'listagemlote',
+    component: ListagemLoteComponent,
     canActivate: [AutorizadoGuard]
   }
 ];
