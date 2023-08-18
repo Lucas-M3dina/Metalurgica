@@ -2,8 +2,23 @@
   <app-sidebar></app-sidebar>
   <div class="container-right-listagem-lote">
     <div class="mural-listagem-lote">
-       <img class="figura-mural" src="../../../assets/figuramural.png" alt="Figura mural">
-       <span class="texto-vazio-listagem-lote">Nenhum lote foi selecionado</span>
+
+      <div class="container-info-lote">
+        <div class="card-lote">
+          <div class="box-textos-card">
+            <p class="texto-capturado-card"><span class="texto-titulo-card">Cliente:</span> {{loteSelecionado.nomeEmpresa}}</p>
+            <p class="texto-capturado-card"><span class="texto-titulo-card">Nº do lote:</span> {{loteSelecionado.id_Lote}}</p>
+            <p class="texto-capturado-card"><span class="texto-titulo-card">Data:</span> {{formataData()}}</p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="container-vazio"  *ngIf="!selecionado">
+        <img class="figura-mural" src="../../../assets/figuramural.png" alt="Figura mural">
+        <span class="texto-vazio-listagem-lote">Nenhum lote foi selecionado</span>
+      </div>
     </div>
 
     <div class="container-search-lote">
@@ -13,33 +28,10 @@
       </form>
 
       <div class="container-card-lote">
-        <div class="card-lote">
-          <img src="../../../assets/laboratorio-icon.png" alt="icone laboratorio">
-          <div class="box-textos-card">
-            <p class="texto-capturado-card"><span class="texto-titulo-card">Cliente:</span> Mac Metalurgica</p>
-            <p class="texto-capturado-card"><span class="texto-titulo-card">Nº do lote:</span> 1</p>
-            <p class="texto-capturado-card"><span class="texto-titulo-card">Data:</span> 17/08/2023</p>
-          </div>
-          <button class="btn-visualizar-card">Visualizar</button>
+        <div *ngFor="let lote of lotes">
+          <app-card [lote]="lote" (changeboolean)="onChangeBoolean(lote.id_Lote)"></app-card>
         </div>
-        <div class="card-lote">
-          <img src="../../../assets/laboratorio-icon.png" alt="icone laboratorio">
-          <div class="box-textos-card">
-            <p class="texto-capturado-card"><span class="texto-titulo-card">Cliente:</span> Mac Metalurgica</p>
-            <p class="texto-capturado-card"><span class="texto-titulo-card">Nº do lote:</span> 1</p>
-            <p class="texto-capturado-card"><span class="texto-titulo-card">Data:</span> 17/08/2023</p>
-          </div>
-          <button class="btn-visualizar-card">Visualizar</button>
-        </div>
-        <div class="card-lote">
-          <img src="../../../assets/laboratorio-icon.png" alt="icone laboratorio">
-          <div class="box-textos-card">
-            <p class="texto-capturado-card"><span class="texto-titulo-card">Cliente:</span> Mac Metalurgica</p>
-            <p class="texto-capturado-card"><span class="texto-titulo-card">Nº do lote:</span> 1</p>
-            <p class="texto-capturado-card"><span class="texto-titulo-card">Data:</span> 17/08/2023</p>
-          </div>
-          <button class="btn-visualizar-card">Visualizar</button>
-        </div>
+
 
       </div>
     </div>

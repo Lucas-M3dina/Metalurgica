@@ -19,7 +19,6 @@ export class DashboardComponent implements OnInit {
   ContagemLote() {
     this.service.ListarLote().subscribe(
       (response) => {
-        console.log(response);
         this.contagem =  response.length
       },
       () => {

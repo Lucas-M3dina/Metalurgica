@@ -14,3 +14,12 @@ export interface UserAlterar{
   dsEmail : string,
 }
 
+export interface Lote{
+  id_Lote : number,
+  nm_MetodologiaAnaliseGranumetrica : string,
+  ds_observacoes : string,
+  nomeProduto : string,
+  nomeEmbalagem : string,
+  nomeEmpresa : string,
+  dt_Cadastro : string,
+}

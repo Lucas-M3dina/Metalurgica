@@ -1,0 +1,9 @@
+<div class="card-lote">
+  <img src="../../../assets/laboratorio-icon.png" alt="icone laboratorio">
+  <div class="box-textos-card">
+    <p class="texto-capturado-card"><span class="texto-titulo-card">Cliente:</span> {{lote.nomeEmpresa}}</p>
+    <p class="texto-capturado-card"><span class="texto-titulo-card">Nº do lote:</span> {{lote.id_Lote}}</p>
+    <p class="texto-capturado-card"><span class="texto-titulo-card">Data:</span> {{formataData()}}</p>
+  </div>
+  <button class="btn-visualizar-card" (click)="mudarBoolean()">Visualizar</button>
+</div>

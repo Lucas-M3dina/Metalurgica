@@ -23,6 +23,7 @@
   align-items: center;
   padding: 20px;
   gap: 15px;
+  min-height: 300px;
 }
 
 .texto-vazio-listagem-lote{
@@ -91,53 +92,8 @@
   gap: 20px;
 }
 
-.card-lote{
-  border-radius: 5px;
-  background: radial-gradient(50% 50.00% at 50% 50.00%, #1C2523 83.33%, #252626 100%);
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.45);
-  width: 220px;
-  height: 280px;
-
+.container-vazio{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 25px;
-  padding: 20px;
-}
-
-.box-textos-card{
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.texto-capturado-card{
-  color: #2EB88E;
-  font-family: Arvo;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.texto-titulo-card{
-
-  color: #FFF;
-  font-family: Arvo;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.btn-visualizar-card{
-  color: #FFF;
-  font-family: Arvo;
-  font-size: 14px;
-  font-weight: 700;
-
-  border-radius: 3px;
-  background: #2EB88E;
-  padding: 10px 20px;
-
+  gap: 20px;
 }
