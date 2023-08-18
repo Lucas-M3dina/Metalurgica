@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "eNZaLKhpl5LxEKmLfcG5fcJ+yTHR2EJ+7i6eoounGoGhbIkYMEWLqr66KOZVwCbZeUEcHeIShnyt6SRdbf17Rw==",
+  "dgSpecHash": "8m0Tqf522Qf97tv96ty1ZbzlovkcOMWHLJN5+vBH8cm7l+a6mLcr21yBabZixLTotBElVr8242f4HP2+tlysyw==",
   "success": true,
   "projectFilePath": "C:\\Users\\lucaso\\Desktop\\backend\\Metalurgica\\Metalurgica\\Biz\\Biz.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucaso\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\lucaso\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\lucaso\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+    "C:\\Users\\lucaso\\.nuget\\packages\\dapper\\2.0.143\\dapper.2.0.143.nupkg.sha512",
     "C:\\Users\\lucaso\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\lucaso\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\lucaso\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.2\\microsoft.data.sqlclient.5.0.2.nupkg.sha512",

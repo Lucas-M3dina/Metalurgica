@@ -420,3 +420,4 @@ C:\Users\lucaso\Desktop\backend\Metalurgica\Metalurgica\Metalurgica\obj\Debug\ne
 C:\Users\lucaso\Desktop\backend\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.pdb
 C:\Users\lucaso\Desktop\backend\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\Metalurgica.genruntimeconfig.cache
 C:\Users\lucaso\Desktop\backend\Metalurgica\Metalurgica\Metalurgica\obj\Debug\net6.0\ref\Metalurgica.dll
+C:\Users\lucaso\Desktop\backend\Metalurgica\Metalurgica\Metalurgica\bin\Debug\net6.0\Dapper.dll

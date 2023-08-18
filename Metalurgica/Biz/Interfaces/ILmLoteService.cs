@@ -16,7 +16,7 @@ namespace Biz.Interfaces
         /// Lista todos os lote
         /// </summary>
         /// <returns>Uma lista de lote</returns>
-        List<LmLote> ConsultaTodos();
+        public IEnumerable<LoteListagemViewModel> ConsultaTodos();
 
         /// <summary>
         /// Atualiza um lote existente
@@ -46,5 +46,7 @@ namespace Biz.Interfaces
         /// <param name="lote">lote que será cadastrada</param>
         /// <param name="responsavel">String que identifica usuario logado</param>
         public void Insere(LoteViewModel lote, string responsavel);
+
+        public IEnumerable<LoteListagemViewModel> ConsultaDapperId(int id);
     }
 }

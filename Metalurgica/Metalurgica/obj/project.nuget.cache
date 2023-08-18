@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "350794XB3YfqbDANMt5FhFksqoMj6q2fYoK99A0UZg4iHkfIIuBnXa9F92H96/mxA4ga8BqRLm040+vSe1CQ6g==",
+  "dgSpecHash": "Fs2zmsMdANoMJnDNMfkU7JQKPLxQZlsUuo9Zo2mq2K/8HE+/xpG8+pHON3tN71V6soq/UVZZeEt6JXgsfWeG0A==",
   "success": true,
   "projectFilePath": "C:\\Users\\lucaso\\Desktop\\backend\\Metalurgica\\Metalurgica\\Metalurgica\\Metalurgica.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucaso\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\lucaso\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\lucaso\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+    "C:\\Users\\lucaso\\.nuget\\packages\\dapper\\2.0.143\\dapper.2.0.143.nupkg.sha512",
     "C:\\Users\\lucaso\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\lucaso\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\lucaso\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.21\\microsoft.aspnetcore.authentication.jwtbearer.6.0.21.nupkg.sha512",

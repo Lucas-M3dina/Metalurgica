@@ -51,6 +51,10 @@
               "target": "Package",
               "version": "[4.0.3, )"
             },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.143, )"
+            },
             "Microsoft.EntityFrameworkCore.DynamicLinq": {
               "target": "Package",
               "version": "[7.3.4, )"

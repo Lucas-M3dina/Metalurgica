@@ -32,6 +32,20 @@ namespace Metalurgica.Controllers
             }
         }
 
+        [HttpGet("{id}")]
+        [Authorize]
+        public IActionResult GetLote(int id)
+        {
+            try
+            {
+                return Ok(_loteRepository.ConsultaDapperId(id));
+            }
+            catch (Exception Erro)
+            {
+                return BadRequest(Erro);
+            }
+        }
+
         [Authorize]
         [HttpPost]
         public IActionResult Criar(LoteViewModel e)

@@ -13,6 +13,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
+
+
 builder.Services.AddDbContext<MetalurgicaEstudoContext>();
 builder.Services.AddScoped<ILmUsuarioService, LmUsuarioService>();
 builder.Services.AddScoped<ILmEmpresaService, LmEmpresaService>();
@@ -59,7 +61,9 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services
     .AddControllers()
-    .AddNewtonsoftJson();
+    .AddNewtonsoftJson(options =>
+      options.SerializerSettings.ReferenceLoopHandling =
+        Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
 var app = builder.Build();
 
