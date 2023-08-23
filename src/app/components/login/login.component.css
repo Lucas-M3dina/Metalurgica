@@ -1,4 +1,38 @@
+.fundo-login{
+  background-image: url('../../../assets/Fundo-Imagem-Login.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
+.font-roboto{
+  font-family: Roboto;
+}
+
+.font-arvo{
+  font-family: Arvo;
+}
+
+.btn-backgroud-login{
+  background: #313C38;
+}
+
+.hover:hover{
+  background: #38433f;
+  cursor: pointer;
+}
+
+/* ANTIGO */
+
+.btn-redirect{
+  border-radius: 4px;
+  background: #313C38;
+  color: #FFF;
+  font-family: Arvo;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  padding: 14px 30px;
+}
 
 .container{
   display: flex;
@@ -13,16 +47,7 @@
 }
 
 /* BOTAO CSS  */
-.btn-redirect{
-  border-radius: 4px;
-  background: #313C38;
-  color: #FFF;
-  font-family: Arvo;
-  font-size: 16px;
-  font-weight: 700;
-  text-align: center;
-  padding: 14px 30px;
-}
+
 
 .btn-redirect:hover{
   background: #38433f;
