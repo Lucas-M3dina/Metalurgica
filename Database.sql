@@ -149,10 +149,3 @@ BEGIN
 END;
 GO 
 
-
-
-select * from Produto
-ALTER TABLE ProdutoQuesito ADD Ds_Ideal DECIMAL NULL;
-UPDATE ProdutoQuesito SET Ds_Ideal = 0.00 WHERE Ds_Ideal IS NULL;
-ALTER TABLE ProdutoQuesito ALTER COLUMN Ds_Ideal DECIMAL NOT NULL;
-
