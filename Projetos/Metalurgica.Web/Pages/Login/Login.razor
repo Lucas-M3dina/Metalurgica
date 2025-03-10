@@ -1,0 +1,40 @@
+﻿@page "/"
+@layout EmptyLayout
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col vh-100 d-flex justify-content-center align-items-center fundo-login">
+            <div class="d-flex justify-content-center align-items-center gap-5 flex-column w-75">
+                <img class="w-25" src="/img/logo-branco-redondo.png" alt="logo"/>
+                <div>
+                    <p class="roboto text-white fs-5 text-center ">Nossa plataforma foi desenvolvida para simplificar e otimizar o processo de gerenciamento de lotes e geração de certificados. Com recursos intuitivos e eficientes, estamos aqui para facilitar o seu trabalho.</p>
+                    <p class="roboto text-white fs-5 text-center ">Caso não tenha uma conta clique no botão abaixo e crie uma para acessar todas as funcionalidades disponíveis. Nossa interface simples e objetiva proporcionará uma experiência fluida e agradável durante toda a sua jornada.</p>
+                </div>  
+                <MudButton Variant="Variant.Filled" Color="Color.Secondary" Class="arvo text-capitalize py-3 px-5 fs-5 fw-bold">Cadastrar</MudButton>
+            </div>
+
+        </div>
+        <div class="col vh-100 d-flex justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center gap-5 flex-column w-75">
+                <img class="w-25" src="/img/logo.png" alt="logo" />
+                <EditForm Model="@usuario" OnValidSubmit="HandleValidSubmit" FormName="formularioLogin" class="w-100 h-100 d-flex align-items-center flex-column ">
+                    <DataAnnotationsValidator />
+                    <ValidationSummary />
+                    <span class="text-center text-danger">@mensagemErro</span>
+
+                    <div class="mb-4 w-100">
+                        <label for="email" class="arvo fs-6">Email</label>
+                        <InputText id="email" class="form-control arvo-placeholder py-3 borda-input" @bind-Value="usuario.Email" placeholder="Digite seu email aqui" />
+                    </div>
+
+                    <div class="mb-3 w-100">
+                        <label for="senha" class="arvo fs-6">Senha</label>
+                        <InputText id="senha" type="password" class="form-control arvo-placeholder py-3 borda-input" @bind-Value="usuario.Senha" placeholder="Digite sua senha aqui" />
+                    </div>
+                    <MudButton ButtonType="ButtonType.Submit" StartIcon="@Icons.Material.Filled.Login" Variant="Variant.Filled" Color="Color.Secondary" Class="arvo text-capitalize py-3 px-5 fs-6 fw-bold mt-5">Entrar</MudButton>
+                </EditForm>
+            </div>
+        </div>
+    </div>
+</div>
+

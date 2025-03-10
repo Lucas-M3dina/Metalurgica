@@ -1,0 +1,17 @@
+C:\Users\medina\Desktop\Metalurgica\Projetos\Metalurgica.Shared\bin\Debug\net8.0\Metalurgica.Shared.deps.json
+C:\Users\medina\Desktop\Metalurgica\Projetos\Metalurgica.Shared\bin\Debug\net8.0\Metalurgica.Shared.dll
+C:\Users\medina\Desktop\Metalurgica\Projetos\Metalurgica.Shared\bin\Debug\net8.0\Metalurgica.Shared.pdb
+C:\Users\medina\Desktop\Metalurgica\Projetos\Metalurgica.Shared\bin\Debug\net8.0\Metalurgica.Data.dll
+C:\Users\medina\Desktop\Metalurgica\Projetos\Metalurgica.Shared\bin\Debug\net8.0\Metalurgica.Entities.dll
+C:\Users\medina\Desktop\Metalurgica\Projetos\Metalurgica.Shared\bin\Debug\net8.0\Metalurgica.Data.pdb
+C:\Users\medina\Desktop\Metalurgica\Projetos\Metalurgica.Shared\bin\Debug\net8.0\Metalurgica.Entities.pdb
+C:\Users\medina\Desktop\Metalurgica\Projetos\Metalurgica.Shared\obj\Debug\net8.0\Metalurgica.Shared.csproj.AssemblyReference.cache
+C:\Users\medina\Desktop\Metalurgica\Projetos\Metalurgica.Shared\obj\Debug\net8.0\Metalurgica.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\medina\Desktop\Metalurgica\Projetos\Metalurgica.Shared\obj\Debug\net8.0\Metalurgica.Shared.AssemblyInfoInputs.cache
+C:\Users\medina\Desktop\Metalurgica\Projetos\Metalurgica.Shared\obj\Debug\net8.0\Metalurgica.Shared.AssemblyInfo.cs
+C:\Users\medina\Desktop\Metalurgica\Projetos\Metalurgica.Shared\obj\Debug\net8.0\Metalurgica.Shared.csproj.CoreCompileInputs.cache
+C:\Users\medina\Desktop\Metalurgica\Projetos\Metalurgica.Shared\obj\Debug\net8.0\Metalurg.337B7A24.Up2Date
+C:\Users\medina\Desktop\Metalurgica\Projetos\Metalurgica.Shared\obj\Debug\net8.0\Metalurgica.Shared.dll
+C:\Users\medina\Desktop\Metalurgica\Projetos\Metalurgica.Shared\obj\Debug\net8.0\refint\Metalurgica.Shared.dll
+C:\Users\medina\Desktop\Metalurgica\Projetos\Metalurgica.Shared\obj\Debug\net8.0\Metalurgica.Shared.pdb
+C:\Users\medina\Desktop\Metalurgica\Projetos\Metalurgica.Shared\obj\Debug\net8.0\ref\Metalurgica.Shared.dll

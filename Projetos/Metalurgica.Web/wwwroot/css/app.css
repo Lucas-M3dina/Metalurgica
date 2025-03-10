@@ -1,0 +1,84 @@
+.loading-progress {
+    position: relative;
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    margin: 20vh auto 1rem auto;
+}
+
+.loading-progress circle {
+    fill: none;
+    stroke: #e0e0e0;
+    stroke-width: 0.6rem;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+}
+
+.loading-progress circle:last-child {
+    stroke: #1b6ec2;
+    stroke-dasharray: calc(3.141 * var(--blazor-load-percentage, 0%) * 0.8), 500%;
+    transition: stroke-dasharray 0.05s ease-in-out;
+}
+
+.loading-progress-text {
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    inset: calc(20vh + 3.25rem) 0 auto 0.2rem;
+}
+
+.loading-progress-text:after {
+    content: var(--blazor-load-percentage-text, "Loading");
+}
+
+
+.roboto{
+    font-family: 'roboto' !important;
+}
+
+.arvo {
+    font-family: "Arvo", serif !important;
+}
+
+.arvo-placeholder::placeholder {
+    font-family: "Arvo", serif !important;
+}
+
+.borda-input {
+    border: 1px solid #20332f !important;
+}
+
+.azul-claro {
+    color: #2EB88E !important;
+}
+
+.nav-link-tab {
+    color: #DADADA;
+}
+
+.nav-link-tab:hover {
+    background-color: #252B29 !important;
+}
+
+.bg-cinza {
+    background-color: #1C2523;
+}
+
+.text-gray{
+    color: #CCCCCC;
+}
+.w-fit-content{
+    width: fit-content;
+}
+
+.fs-7 {
+    font-size: 0.8rem !important;
+}
+
+.lh-04 {
+    line-height: 0.4 !important;
+}
+
+.h-input {
+    height: 45px !important;
+}

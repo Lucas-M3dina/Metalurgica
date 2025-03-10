@@ -1,0 +1,26 @@
+﻿@inherits LayoutComponentBase
+<MudThemeProvider Theme="_currentTheme" />
+<MudPopoverProvider />
+<MudSnackbarProvider />
+<MudDialogProvider 
+    Position="DialogPosition.Center"
+ />
+
+<div class="d-flex">
+    <NavMenu />
+    <main class="p-5 w-100 scroll-main">
+        @Body
+    </main>
+</div>
+
+@code{
+    private readonly MudTheme _currentTheme = new()
+        {
+            PaletteLight = new PaletteLight
+            {
+                Primary = "#2EB88E",
+                Secondary = "#1C2523",
+                Warning = "#c72525"
+            }
+        };
+}

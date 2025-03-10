@@ -1,0 +1,63 @@
+﻿@layout MainLayout
+@page "/lote"
+
+
+<div class="container-fluid d-flex flex-column gap-4">
+    <div class="row">
+        <div class="col-12">
+            <MudCard Class="w-100 altura-card-lote p-4 " Elevation="4">
+                <MudCardContent Class="w-100 d-flex justify-content-center align-items-center flex-column">
+                    <img class="w-25" src="/img/ausencia-lote.png" />
+                    <MudText Class="roboto text-gray fw-bold fs-3">Nenhum lote foi selecionado</MudText>
+                </MudCardContent>
+            </MudCard>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 d-flex justify-content-end">
+            <MudButton Variant="Variant.Filled"
+                       Color="Color.Primary"
+                       Class="arvo py-2 px-5 ">
+                Criar Lote
+            </MudButton>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <MudTextField 
+                @bind-Value="Pesquisa" 
+                Label="Pesquisar por lote" 
+                Variant="Variant.Outlined" 
+                AdornmentColor="Color.Primary"
+                Adornment="Adornment.End" 
+                AdornmentIcon="@Icons.Material.Filled.Search">
+            </MudTextField>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+            <CardLotes></CardLotes>
+        </div>
+
+        <div class="col-3">
+            <CardLotes></CardLotes>
+        </div>
+
+        <div class="col-3">
+            <CardLotes></CardLotes>
+        </div>
+
+        <div class="col-3">
+            <CardLotes></CardLotes>
+        </div>
+
+    </div>
+
+</div>
+
+@code {
+    public string Pesquisa = string.Empty;
+}

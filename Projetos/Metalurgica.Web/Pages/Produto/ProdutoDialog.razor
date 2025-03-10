@@ -1,0 +1,208 @@
+﻿<MudDialog Class="container">
+    <DialogContent>
+        <EditForm Model="@Product" OnValidSubmit="HandleValidSubmit" FormName="formularioLogin" class="row w-100 h-100  ">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+            
+            <div class="row d-flex justify-content-center">
+                <img src="/img/logo.png" alt="Logo" class="logo-modal-produto mb-4" />
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <p class="arvo fw-bold fs-6 my-4">Cadastro de Produto:</p>
+                </div>
+
+                <div class="col-4 mb-3">
+                    <label for="Nome" class="arvo fs-7">Nome</label>
+                    <InputText id="Nome"
+                        class="form-control h-input fs-7 lh-04 arvo-placeholder py-3 borda-input"
+                        @bind-Value="Product.Nome"
+                        placeholder="Digite o nome do produto" />
+                </div>
+
+                <div class="col-4 mb-3">
+                    <label for="Descricao" class="arvo fs-7">Descrição</label>
+                    <InputText id="Descricao"
+                        class="form-control h-input fs-7 lh-04 arvo-placeholder py-3 borda-input"
+                        @bind-Value="Product.Descricao"
+                        placeholder="Digite a descrição produto" />
+                </div>
+
+                <div class="col-4 mb-3">
+                    <label for="Validade" class="arvo fs-7">Validade</label>
+                    <MudNumericField @bind-Value="Product.Validade"
+                                     Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input py-2 ps-1"
+                                     Underline="false"
+                                     Placeholder="Digite a Validade"
+                                     Min="0" />
+                </div>
+                
+                <div class="col-4 mb-3">
+                    <label for="Setor" class="arvo fs-7">Setor</label>
+                    <InputText id="Setor"
+                        class="form-control h-input fs-7 lh-04 arvo-placeholder py-3 borda-input"
+                        @bind-Value="Product.Setor"
+                        placeholder="Digite o setor do produto" />
+                </div>
+
+                <div class="col-4 mb-3">
+                    <label for="Io" class="arvo fs-7">IO</label>
+                    <InputText id="Io"
+                        class="form-control h-input fs-7 lh-04 arvo-placeholder py-3 borda-input"
+                        @bind-Value="Product.Io"
+                        placeholder="Digite o IO do produto" />
+                </div>
+
+                <div class="col-4 mb-3">
+                    <label for="Versao" class="arvo fs-7">Versão</label>
+                    <MudNumericField @bind-Value="Product.Versao"
+                        Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input py-2 ps-1"
+                        Underline="false"
+                        Placeholder="Digite a versão"
+                        Min="0" />
+                </div>
+
+                <div class="col-4 mb-3">
+                    <label for="Especificacao" class="arvo fs-7">Especificação</label>
+                    <InputText id="Especificacao"
+                               class="form-control h-input fs-7 lh-04 arvo-placeholder py-3 borda-input"
+                               @bind-Value="Product.Especificacao"
+                               placeholder="Digite a especificação do produto" />
+                </div>
+
+                <div class="col-4 mb-3">
+                    <label for="Especie" class="arvo fs-7">Especie</label>
+                    <InputText id="Especie"
+                               class="form-control h-input fs-7 lh-04 arvo-placeholder py-3 borda-input"
+                               @bind-Value="Product.Especie"
+                               placeholder="Digite o especie do produto" />
+                </div>
+
+                <div class="col-4 mb-3">
+                    <label for="DtEmissao" class="arvo fs-7">Data Emissão</label>
+                    <MudDatePicker 
+                        id="DtEmissao"
+                        Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input py-2 ps-1"
+                        Mask="@(new DateMask("dd/MM/yyyy"))" 
+                        DateFormat="dd/MM/yyyy"
+                        Underline="false"
+                        @bind-Date="Product.Emissao"
+                    />
+                </div>
+
+                <div class="col-12">
+                    <p class="arvo fw-bold fs-6 my-4">Embalagens Associadas:</p>
+                </div>
+
+                @foreach(var embalagem in Product.Embalagens){
+
+                    <div class="col-5 mb-3">
+                        <label for="embalagem" class="arvo fs-7">Nome da Embalagem</label>
+                        <MudSelect
+                            id="embalagem"
+                            Underline="false"
+                            Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input  py-2 ps-1"
+                            @bind-Value="embalagem.IdEmbalagem"
+                        >
+                            @foreach(var embalagemApi in embalagens){
+                                <MudSelectItem Value="embalagemApi.IdEmbalagem" Class="fs-7">@embalagemApi.Nome</MudSelectItem>
+                            }
+                        </MudSelect>
+                    </div>
+
+                    <div class="col-5 mb-3">
+                        <label for="Quantidade" class="arvo fs-7">Quantidade</label>
+                        <MudNumericField 
+                            @bind-Value="embalagem.Quantidade"
+                            Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input py-2 ps-1"
+                            Underline="false"
+                            Placeholder="Digite a Quantidade"
+                            Min="0" />
+                    </div>
+
+                    <div class="col-1 d-flex align-items-center justify-content-end">
+                        <MudFab OnClick="() => RemoveEmbalagem(embalagem)" Color="Color.Warning" StartIcon="@Icons.Material.Filled.Delete" />
+                    </div>
+                    
+                    @if(Product.Embalagens.Last() == embalagem){
+                        <div class="col-1 d-flex align-items-center justify-content-end">
+                            <MudFab OnClick="AddEmbalagem" Color="Color.Primary" StartIcon="@Icons.Material.Filled.Add" />
+                        </div>
+                    }
+
+                }
+
+                <div class="col-12">
+                    <p class="arvo fw-bold fs-6 my-4">Quesitos Associados:</p>
+                </div>
+
+                @foreach (var quesito in Product.Quesitos)
+                {
+                    <div class="col-4 mb-3">
+                        <label for="quesito" class="arvo fs-7">Quesito</label>
+                        <MudSelect id="quesito"
+                                   Underline="false"
+                                   Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input  py-2 ps-1"
+                                   @bind-Value="quesito.IdQuesito">
+                            @foreach (var quesitoApi in Quesitos)
+                            {
+                                <MudSelectItem Value="quesitoApi.IdQuesito">@quesitoApi.Codigo - @quesitoApi.Descricao </MudSelectItem>
+                            }
+                        </MudSelect>
+                    </div>
+
+                    <div class="col-2 mb-3">
+                        <label for="Ideal" class="arvo fs-7">Ideal</label>
+                        <MudNumericField 
+                            @bind-Value="quesito.Ideal"
+                            Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input py-2 ps-1"
+                            Underline="false"
+                            Placeholder="Digite Ideal"
+                            Min="0" />
+                    </div>
+
+                    <div class="col-2 mb-3">
+                        <label for="Minimo" class="arvo fs-7">Minimo</label>
+                        <MudNumericField 
+                            @bind-Value="quesito.Minimo"
+                            Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input py-2 ps-1"
+                            Underline="false"
+                            Placeholder="Digite Minimo"
+                            Min="0" />
+                    </div>
+
+                    <div class="col-2 mb-3">
+                        <label for="Maximo" class="arvo fs-7">Maximo</label>
+                        <MudNumericField 
+                            @bind-Value="quesito.Maximo"
+                            Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input py-2 ps-1"
+                            Underline="false"
+                            Placeholder="Digite Maximo"
+                            Min="0" />
+                    </div>
+                    
+                    <div class="col-1 d-flex align-items-center justify-content-end">
+                        <MudFab OnClick="() => RemoveQuesito(quesito)" Color="Color.Warning" StartIcon="@Icons.Material.Filled.Delete" />
+                    </div>
+
+                    @if(quesito == Product.Quesitos.Last()){
+                        <div class="col-1 d-flex align-items-center justify-content-end">
+                            <MudFab OnClick="AddQuesito" Color="Color.Primary" StartIcon="@Icons.Material.Filled.Add" />
+                        </div>
+                    }
+                }
+            </div>
+
+            
+            <div class="col-12 d-flex justify-content-center my-5">
+                <MudButton 
+                    ButtonType="ButtonType.Submit"
+                    Variant="Variant.Filled"
+                    Color="Color.Secondary"
+                    Class="arvo text-capitalize py-2 px-5 fs-6 mt-5 w-fit-content">Cadastrar</MudButton>
+            </div>
+        </EditForm>
+        
+    </DialogContent>
+</MudDialog>

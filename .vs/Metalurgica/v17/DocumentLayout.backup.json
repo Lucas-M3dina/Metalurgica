@@ -1,0 +1,464 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\medina\\Desktop\\Metalurgica\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.web\\pages\\lote\\lote.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|solutionrelative:projetos\\metalurgica.web\\pages\\lote\\lote.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4291245-C2CF-470F-917C-F2098FEB6768}|Projetos\\Metalurgica.Api\\Metalurgica.Api.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.api\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4291245-C2CF-470F-917C-F2098FEB6768}|Projetos\\Metalurgica.Api\\Metalurgica.Api.csproj|solutionrelative:projetos\\metalurgica.api\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.web\\pages\\produto\\produto.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|solutionrelative:projetos\\metalurgica.web\\pages\\produto\\produto.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D3D76B4-0D0D-4AC1-8FFC-0FF9B7FA2702}|Projetos\\Metalurgica.Entities\\Metalurgica.Entities.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.entities\\request\\produtorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D3D76B4-0D0D-4AC1-8FFC-0FF9B7FA2702}|Projetos\\Metalurgica.Entities\\Metalurgica.Entities.csproj|solutionrelative:projetos\\metalurgica.entities\\request\\produtorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.web\\pages\\produto\\produtodialog.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|solutionrelative:projetos\\metalurgica.web\\pages\\produto\\produtodialog.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.web\\pages\\produto\\produtodialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|solutionrelative:projetos\\metalurgica.web\\pages\\produto\\produtodialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.web\\pages\\produto\\produtodialog.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|solutionrelative:projetos\\metalurgica.web\\pages\\produto\\produtodialog.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.web\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|solutionrelative:projetos\\metalurgica.web\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83292E94-5012-4B36-887E-CFDC72AE0BB7}|Projetos\\Metalurgica.Shared\\Metalurgica.Shared.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.shared\\services\\produtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83292E94-5012-4B36-887E-CFDC72AE0BB7}|Projetos\\Metalurgica.Shared\\Metalurgica.Shared.csproj|solutionrelative:projetos\\metalurgica.shared\\services\\produtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D3D76B4-0D0D-4AC1-8FFC-0FF9B7FA2702}|Projetos\\Metalurgica.Entities\\Metalurgica.Entities.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.entities\\request\\embalagemrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D3D76B4-0D0D-4AC1-8FFC-0FF9B7FA2702}|Projetos\\Metalurgica.Entities\\Metalurgica.Entities.csproj|solutionrelative:projetos\\metalurgica.entities\\request\\embalagemrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D3D76B4-0D0D-4AC1-8FFC-0FF9B7FA2702}|Projetos\\Metalurgica.Entities\\Metalurgica.Entities.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.entities\\request\\quesitorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D3D76B4-0D0D-4AC1-8FFC-0FF9B7FA2702}|Projetos\\Metalurgica.Entities\\Metalurgica.Entities.csproj|solutionrelative:projetos\\metalurgica.entities\\request\\quesitorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.web\\services\\productwebservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|solutionrelative:projetos\\metalurgica.web\\services\\productwebservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.web\\pages\\produto\\produto.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|solutionrelative:projetos\\metalurgica.web\\pages\\produto\\produto.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|solutionrelative:projetos\\metalurgica.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|solutionrelative:projetos\\metalurgica.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.web\\metalurgica.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|solutionrelative:projetos\\metalurgica.web\\metalurgica.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4291245-C2CF-470F-917C-F2098FEB6768}|Projetos\\Metalurgica.Api\\Metalurgica.Api.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.api\\metalurgica.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A4291245-C2CF-470F-917C-F2098FEB6768}|Projetos\\Metalurgica.Api\\Metalurgica.Api.csproj|solutionrelative:projetos\\metalurgica.api\\metalurgica.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D3D76B4-0D0D-4AC1-8FFC-0FF9B7FA2702}|Projetos\\Metalurgica.Entities\\Metalurgica.Entities.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.entities\\response\\quesitoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D3D76B4-0D0D-4AC1-8FFC-0FF9B7FA2702}|Projetos\\Metalurgica.Entities\\Metalurgica.Entities.csproj|solutionrelative:projetos\\metalurgica.entities\\response\\quesitoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1058F8F6-6DBC-4C0F-9DF4-A82502D1AE45}|Projetos\\Metalurgica.Data\\Metalurgica.Data.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.data\\model\\produtoquesito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1058F8F6-6DBC-4C0F-9DF4-A82502D1AE45}|Projetos\\Metalurgica.Data\\Metalurgica.Data.csproj|solutionrelative:projetos\\metalurgica.data\\model\\produtoquesito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1058F8F6-6DBC-4C0F-9DF4-A82502D1AE45}|Projetos\\Metalurgica.Data\\Metalurgica.Data.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.data\\model\\quesito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1058F8F6-6DBC-4C0F-9DF4-A82502D1AE45}|Projetos\\Metalurgica.Data\\Metalurgica.Data.csproj|solutionrelative:projetos\\metalurgica.data\\model\\quesito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.web\\services\\quesitowebservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|solutionrelative:projetos\\metalurgica.web\\services\\quesitowebservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4291245-C2CF-470F-917C-F2098FEB6768}|Projetos\\Metalurgica.Api\\Metalurgica.Api.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.api\\controllers\\quesitoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4291245-C2CF-470F-917C-F2098FEB6768}|Projetos\\Metalurgica.Api\\Metalurgica.Api.csproj|solutionrelative:projetos\\metalurgica.api\\controllers\\quesitoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83292E94-5012-4B36-887E-CFDC72AE0BB7}|Projetos\\Metalurgica.Shared\\Metalurgica.Shared.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.shared\\services\\quesitoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83292E94-5012-4B36-887E-CFDC72AE0BB7}|Projetos\\Metalurgica.Shared\\Metalurgica.Shared.csproj|solutionrelative:projetos\\metalurgica.shared\\services\\quesitoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4291245-C2CF-470F-917C-F2098FEB6768}|Projetos\\Metalurgica.Api\\Metalurgica.Api.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.api\\controllers\\embalagenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4291245-C2CF-470F-917C-F2098FEB6768}|Projetos\\Metalurgica.Api\\Metalurgica.Api.csproj|solutionrelative:projetos\\metalurgica.api\\controllers\\embalagenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4291245-C2CF-470F-917C-F2098FEB6768}|Projetos\\Metalurgica.Api\\Metalurgica.Api.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4291245-C2CF-470F-917C-F2098FEB6768}|Projetos\\Metalurgica.Api\\Metalurgica.Api.csproj|solutionrelative:projetos\\metalurgica.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83292E94-5012-4B36-887E-CFDC72AE0BB7}|Projetos\\Metalurgica.Shared\\Metalurgica.Shared.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.shared\\services\\interfaces\\iquesitoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83292E94-5012-4B36-887E-CFDC72AE0BB7}|Projetos\\Metalurgica.Shared\\Metalurgica.Shared.csproj|solutionrelative:projetos\\metalurgica.shared\\services\\interfaces\\iquesitoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|c:\\users\\medina\\desktop\\metalurgica\\projetos\\metalurgica.web\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF627CF5-8951-4387-BB62-4185A643E9F5}|Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj|solutionrelative:projetos\\metalurgica.web\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProdutoDialog.razor.cs",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Pages\\Produto\\ProdutoDialog.razor.cs",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Web\\Pages\\Produto\\ProdutoDialog.razor.cs",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Pages\\Produto\\ProdutoDialog.razor.cs",
+              "RelativeToolTip": "Projetos\\Metalurgica.Web\\Pages\\Produto\\ProdutoDialog.razor.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwCIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T20:21:06.443Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProdutoDialog.razor",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Pages\\Produto\\ProdutoDialog.razor",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Web\\Pages\\Produto\\ProdutoDialog.razor",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Pages\\Produto\\ProdutoDialog.razor",
+              "RelativeToolTip": "Projetos\\Metalurgica.Web\\Pages\\Produto\\ProdutoDialog.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-16T20:21:02.76Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProdutoRequest.cs",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Entities\\Request\\ProdutoRequest.cs",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Entities\\Request\\ProdutoRequest.cs",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Entities\\Request\\ProdutoRequest.cs",
+              "RelativeToolTip": "Projetos\\Metalurgica.Entities\\Request\\ProdutoRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T21:37:13.044Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Lote.razor",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Pages\\Lote\\Lote.razor",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Web\\Pages\\Lote\\Lote.razor",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Pages\\Lote\\Lote.razor",
+              "RelativeToolTip": "Projetos\\Metalurgica.Web\\Pages\\Lote\\Lote.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T23:59:20.425Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Api\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Api\\Controllers\\ProdutosController.cs",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Api\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "Projetos\\Metalurgica.Api\\Controllers\\ProdutosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T21:53:44.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Produto.razor",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Pages\\Produto\\Produto.razor",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Web\\Pages\\Produto\\Produto.razor",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Pages\\Produto\\Produto.razor",
+              "RelativeToolTip": "Projetos\\Metalurgica.Web\\Pages\\Produto\\Produto.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-16T20:21:04.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProdutoDialog.razor.css",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Pages\\Produto\\ProdutoDialog.razor.css",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Web\\Pages\\Produto\\ProdutoDialog.razor.css",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Pages\\Produto\\ProdutoDialog.razor.css",
+              "RelativeToolTip": "Projetos\\Metalurgica.Web\\Pages\\Produto\\ProdutoDialog.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-07T23:25:10.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Web\\wwwroot\\css\\app.css",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "Projetos\\Metalurgica.Web\\wwwroot\\css\\app.css",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-16T22:08:51.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductWebService.cs",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Services\\ProductWebService.cs",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Web\\Services\\ProductWebService.cs",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Services\\ProductWebService.cs",
+              "RelativeToolTip": "Projetos\\Metalurgica.Web\\Services\\ProductWebService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T21:50:46.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProdutoService.cs",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Shared\\Services\\ProdutoService.cs",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Shared\\Services\\ProdutoService.cs",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Shared\\Services\\ProdutoService.cs",
+              "RelativeToolTip": "Projetos\\Metalurgica.Shared\\Services\\ProdutoService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwFIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T21:08:58.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmbalagemRequest.cs",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Entities\\Request\\EmbalagemRequest.cs",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Entities\\Request\\EmbalagemRequest.cs",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Entities\\Request\\EmbalagemRequest.cs",
+              "RelativeToolTip": "Projetos\\Metalurgica.Entities\\Request\\EmbalagemRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T21:57:26.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "QuesitoRequest.cs",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Entities\\Request\\QuesitoRequest.cs",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Entities\\Request\\QuesitoRequest.cs",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Entities\\Request\\QuesitoRequest.cs",
+              "RelativeToolTip": "Projetos\\Metalurgica.Entities\\Request\\QuesitoRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T21:00:28.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Produto.razor.cs",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Pages\\Produto\\Produto.razor.cs",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Web\\Pages\\Produto\\Produto.razor.cs",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Pages\\Produto\\Produto.razor.cs",
+              "RelativeToolTip": "Projetos\\Metalurgica.Web\\Pages\\Produto\\Produto.razor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T21:52:33.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Program.cs",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Program.cs",
+              "RelativeToolTip": "Projetos\\Metalurgica.Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T20:48:18.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Web\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Projetos\\Metalurgica.Web\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-16T21:32:45.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Metalurgica.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Api\\Metalurgica.Api.csproj",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Api\\Metalurgica.Api.csproj",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Api\\Metalurgica.Api.csproj",
+              "RelativeToolTip": "Projetos\\Metalurgica.Api\\Metalurgica.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-16T21:19:27.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Metalurgica.Web.csproj",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj",
+              "RelativeToolTip": "Projetos\\Metalurgica.Web\\Metalurgica.Web.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-16T21:19:17.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Quesito.cs",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Data\\Model\\Quesito.cs",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Data\\Model\\Quesito.cs",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Data\\Model\\Quesito.cs",
+              "RelativeToolTip": "Projetos\\Metalurgica.Data\\Model\\Quesito.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T21:02:36.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProdutoQuesito.cs",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Data\\Model\\ProdutoQuesito.cs",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Data\\Model\\ProdutoQuesito.cs",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Data\\Model\\ProdutoQuesito.cs",
+              "RelativeToolTip": "Projetos\\Metalurgica.Data\\Model\\ProdutoQuesito.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T21:02:39.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "QuesitoResponse.cs",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Entities\\Response\\QuesitoResponse.cs",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Entities\\Response\\QuesitoResponse.cs",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Entities\\Response\\QuesitoResponse.cs",
+              "RelativeToolTip": "Projetos\\Metalurgica.Entities\\Response\\QuesitoResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T20:38:03.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "QuesitoWebService.cs",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Services\\QuesitoWebService.cs",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Web\\Services\\QuesitoWebService.cs",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Services\\QuesitoWebService.cs",
+              "RelativeToolTip": "Projetos\\Metalurgica.Web\\Services\\QuesitoWebService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T20:46:05.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EmbalagensController.cs",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Api\\Controllers\\EmbalagensController.cs",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Api\\Controllers\\EmbalagensController.cs",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Api\\Controllers\\EmbalagensController.cs",
+              "RelativeToolTip": "Projetos\\Metalurgica.Api\\Controllers\\EmbalagensController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T20:44:45.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "QuesitosController.cs",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Api\\Controllers\\QuesitosController.cs",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Api\\Controllers\\QuesitosController.cs",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Api\\Controllers\\QuesitosController.cs",
+              "RelativeToolTip": "Projetos\\Metalurgica.Api\\Controllers\\QuesitosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T20:42:09.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Api\\Program.cs",
+              "RelativeToolTip": "Projetos\\Metalurgica.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T20:41:43.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "QuesitoService.cs",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Shared\\Services\\QuesitoService.cs",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Shared\\Services\\QuesitoService.cs",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Shared\\Services\\QuesitoService.cs",
+              "RelativeToolTip": "Projetos\\Metalurgica.Shared\\Services\\QuesitoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T20:36:10.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IQuesitoService.cs",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Shared\\Services\\Interfaces\\IQuesitoService.cs",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Shared\\Services\\Interfaces\\IQuesitoService.cs",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Shared\\Services\\Interfaces\\IQuesitoService.cs",
+              "RelativeToolTip": "Projetos\\Metalurgica.Shared\\Services\\Interfaces\\IQuesitoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T20:41:33.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Projetos\\Metalurgica.Web\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Projetos\\Metalurgica.Web\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-16T20:26:43.219Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

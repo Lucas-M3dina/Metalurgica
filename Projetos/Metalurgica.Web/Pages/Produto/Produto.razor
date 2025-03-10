@@ -1,0 +1,56 @@
+﻿@layout MainLayout
+@page "/produto"
+
+
+<div class="container-fluid d-flex flex-column gap-4">
+    <div class="row">
+        <div class="col-12">
+            <h3 class="roboto">Produtos</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 d-flex justify-content-end">
+            <MudButton 
+                Variant="Variant.Filled"
+                Color="Color.Primary"
+                OnClick="OpenDialogAsync"
+                Class="arvo py-2 px-5 ">
+                Criar produto
+            </MudButton>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <MudTextField 
+                @bind-Value="Pesquisa"
+                Label="Pesquisar por produtos"
+                Variant="Variant.Outlined"
+                AdornmentColor="Color.Primary"
+                Adornment="Adornment.End"
+                AdornmentIcon="@Icons.Material.Filled.Search">
+            </MudTextField>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <MudTable Class="w-100" Items="@Products" Hover="true">
+                <HeaderContent>
+                    <MudTh>Nome</MudTh>
+                    <MudTh>Setor</MudTh>
+                    <MudTh>Editor</MudTh>
+                    <MudTh>Data de Criação</MudTh>
+                </HeaderContent>
+                <RowTemplate>
+                    <MudTd DataLabel="Nome">@context.Nome</MudTd>
+                    <MudTd DataLabel="Setor">@context.Setor</MudTd>
+                    <MudTd DataLabel="Editor">@context.Editor</MudTd>
+                    <MudTd DataLabel="DataCriacao">@context.DataCriacao</MudTd>
+                </RowTemplate>
+            </MudTable>
+        </div>
+    </div>
+ </div>
+            
