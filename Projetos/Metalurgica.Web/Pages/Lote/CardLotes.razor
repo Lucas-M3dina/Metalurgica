@@ -4,17 +4,40 @@
     <img src="/img/laboratorio.png" alt="Icone industria" />
 
     <div class="d-flex flex-column my-5">
-        <p class="arvo fw-bold fs-6 text-white">Cliente: <span class="azul-claro">Rollos do Brasil</span> </p>
-        <p class="arvo fw-bold fs-6 text-white">N° do  lote: <span class="azul-claro">18545122</span> </p>
-        <p class="arvo fw-bold fs-6 text-white">Data: <span class="azul-claro">20/07/2023</span> </p>
+        <p class="arvo fw-bold fs-6 text-white">Nome Lote: <span class="azul-claro">@NomeLote</span> </p>
+        <p class="arvo fw-bold fs-6 text-white">N° do  lote: <span class="azul-claro">@NumeroLote</span> </p>
+        <p class="arvo fw-bold fs-6 text-white">Data: <span class="azul-claro">@DataValidadeFormatada</span> </p>
     </div>
 
-    <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="arvo py-2 px-5 fs-6 fw-bold ">Visualizar</MudButton>
+    @if (ShowBtn)
+    {
+        <MudButton 
+        Variant="Variant.Filled" 
+        Color="Color.Primary"
+        OnClick="NotifyClick"
+        Class="arvo py-2 px-5 fs-6 fw-bold ">Visualizar</MudButton>
+    }
 
 </div>
 
 @code {
+    [Parameter]
+    public DateTime? DataValidade { get; set; }
+    [Parameter]
+    public bool ShowBtn { get; set; } = true;
+    [Parameter]
+    public int NumeroLote { get; set; }
+    [Parameter]
+    public string NomeLote { get; set; }
+    [Parameter]
+    public EventCallback ClickSelect { get; set; }
 
+    private async Task NotifyClick()
+    {
+        await ClickSelect.InvokeAsync();
+    }
+
+    public string DataValidadeFormatada => DataValidade?.ToString("dd/MM/yyyy") ?? "Não encontrado";
 }
 
 

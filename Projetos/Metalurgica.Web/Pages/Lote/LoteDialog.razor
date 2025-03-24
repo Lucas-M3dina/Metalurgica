@@ -16,39 +16,41 @@
                 <div class="col-4 mb-3">
                     <label for="Identificador" class="arvo fs-7">Identificador</label>
                     <InputText id="Identificador"
-                               class="form-control h-input fs-7 lh-04 arvo-placeholder py-3 borda-input"
-                               @bind-Value="Lote.Identificador"
-                               placeholder="Digite o numero do Lote" />
+                    class="form-control h-input fs-7 lh-04 arvo-placeholder py-3 borda-input"
+                    @bind-Value="Lote.Identificador"
+                    placeholder="Digite o numero do Lote" />
                 </div>
 
                 <div class="col-4 mb-3">
                     <label for="DtFabricacao" class="arvo fs-7">Data de Fabricação</label>
                     <MudDatePicker id="DtFabricacao"
-                                   Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input py-2 ps-1"
-                                   Mask="@(new DateMask("dd/MM/yyyy"))"
-                                   DateFormat="dd/MM/yyyy"
-                                   Underline="false"
-                                   @bind-Date="Lote.DataFabricacao" />
+                    Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input py-2 ps-1"
+                    Mask="@(new DateMask("dd/MM/yyyy"))"
+                    DateFormat="dd/MM/yyyy"
+                    Underline="false"
+                    @bind-Date="Lote.DataFabricacao" />
                 </div>
 
                 <div class="col-4 mb-3">
                     <label for="DtValidade" class="arvo fs-7">Data de Validade</label>
                     <MudDatePicker id="DtValidade"
-                                   Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input py-2 ps-1"
-                                   Mask="@(new DateMask("dd/MM/yyyy"))"
-                                   DateFormat="dd/MM/yyyy"
-                                   Underline="false"
-                                   @bind-Date="Lote.DataValidade" />
+                    Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input py-2 ps-1"
+                    Mask="@(new DateMask("dd/MM/yyyy"))"
+                    DateFormat="dd/MM/yyyy"
+                    Underline="false"
+                    @bind-Date="Lote.DataValidade" />
                 </div>
 
                 <div class="col-6 mb-3">
                     <label for="produto" class="arvo fs-7">Produto</label>
                     <MudSelect id="produto"
-                               Underline="false"
-                               Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input  py-2 ps-1"
-                               @bind-Value="Lote.IdProduto">
-                        
-                            <MudSelectItem Value="1" Class="fs-7">Produto 01</MudSelectItem>
+                    Underline="false"
+                    Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input  py-2 ps-1"
+                    @bind-Value="Lote.IdProduto">
+                        @foreach (var product in Produtos)
+                        {
+                            <MudSelectItem Value="@product.IdProduto" Class="fs-7">@product.Nome</MudSelectItem>
+                        }
                         
                     </MudSelect>
                 </div>

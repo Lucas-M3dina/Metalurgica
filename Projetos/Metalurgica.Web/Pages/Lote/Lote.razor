@@ -6,10 +6,83 @@
     <div class="row">
         <div class="col-12">
             <MudCard Class="w-100 altura-card-lote p-4 " Elevation="4">
-                <MudCardContent Class="w-100 d-flex justify-content-center align-items-center flex-column">
-                    <img class="w-25" src="/img/ausencia-lote.png" />
-                    <MudText Class="roboto text-gray fw-bold fs-3">Nenhum lote foi selecionado</MudText>
-                </MudCardContent>
+                @if(LoteSelecionado is null){
+                    <MudCardContent Class="w-100 d-flex justify-content-center align-items-center flex-column">
+                        <img class="w-25" src="/img/ausencia-lote.png" />
+                        <MudText Class="roboto text-gray fw-bold fs-3">Nenhum lote foi selecionado</MudText>
+                    </MudCardContent>
+                }
+                else{
+                    <MudCardContent Class="row d-flex justify-content-between align-items-center">
+                        <div class="col-3 px-5">
+                            <CardLotes 
+                            DataValidade="@LoteSelecionado.DataValidade"
+                            NomeLote="@LoteSelecionado.NomeLote"
+                            NumeroLote="@LoteSelecionado.NumeroLote"
+                            ShowBtn="false" />
+                        </div>
+                        
+                        <div class="col-9">
+                            <div class="row">
+                                <div class="col-6 mb-3">
+                                    <label for="NumeroLote" class="arvo fs-7">Numero do Lote</label>
+                                    <InputNumber id="NumeroLote"
+                                                 class="form-control h-input fs-7 lh-04 arvo-placeholder py-3 borda-input"
+                                                 @bind-Value="LoteSelecionado.NumeroLote"
+                                                 ReadOnly="true" />
+                                </div>
+
+                                <div class="col-6 mb-3">
+                                    <label for="NomeLote" class="arvo fs-7">Nome do Lote</label>
+                                    <InputText id="NomeLote"
+                                               class="form-control h-input fs-7 lh-04 arvo-placeholder py-3 borda-input"
+                                               @bind-Value="LoteSelecionado.NomeLote"
+                                               ReadOnly="true" />
+                                </div>
+
+                                <div class="col-6 mb-3">
+                                    <label for="NomeProduto" class="arvo fs-7">Nome do Produto</label>
+                                    <InputText id="NomeProduto"
+                                               class="form-control h-input fs-7 lh-04 arvo-placeholder py-3 borda-input"
+                                               @bind-Value="LoteSelecionado.NomeProduto"
+                                               ReadOnly="true" />
+                                </div>
+
+                                <div class="col-6 mb-3">
+                                    <label for="DtValidade" class="arvo fs-7">Data de Validade</label>
+                                    <MudDatePicker id="DtValidade"
+                                                   Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input py-2 ps-1"
+                                                   Mask="@(new DateMask("dd/MM/yyyy"))"
+                                                   DateFormat="dd/MM/yyyy"
+                                                   Underline="false"
+                                                   @bind-Date="LoteSelecionado.DataValidade"
+                                                   ReadOnly="true" />
+                                </div>
+
+                                <div class="col-6 mb-3">
+                                    <label for="DtFabricacao" class="arvo fs-7">Data de Fabricação</label>
+                                    <MudDatePicker id="DtFabricacao"
+                                                   Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input py-2 ps-1"
+                                                   Mask="@(new DateMask("dd/MM/yyyy"))"
+                                                   DateFormat="dd/MM/yyyy"
+                                                   Underline="false"
+                                                   @bind-Date="LoteSelecionado.DataFabricacao"
+                                                   ReadOnly="true" />
+                                </div>
+
+                                <div class="col-6 mb-3">
+                                    <label for="Identificador" class="arvo fs-7">Identificador</label>
+                                    <InputText id="Identificador"
+                                               class="form-control h-input fs-7 lh-04 arvo-placeholder py-3 borda-input"
+                                               @bind-Value="LoteSelecionado.Identificador"
+                                               ReadOnly="true" />
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </MudCardContent>
+                }
             </MudCard>
         </div>
     </div>
@@ -17,9 +90,9 @@
     <div class="row">
         <div class="col-12 d-flex justify-content-end">
             <MudButton Variant="Variant.Filled"
-                       Color="Color.Primary"
-                       OnClick="OpenDialogAsync"
-                       Class="arvo py-2 px-5 ">
+            Color="Color.Primary"
+            OnClick="OpenDialogAsync"
+            Class="arvo py-2 px-5 ">
                 Criar Lote
             </MudButton>
         </div>
@@ -28,32 +101,29 @@
     <div class="row">
         <div class="col-12">
             <MudTextField 
-                @bind-Value="Pesquisa" 
-                Label="Pesquisar por lote" 
-                Variant="Variant.Outlined" 
-                AdornmentColor="Color.Primary"
-                Adornment="Adornment.End" 
-                AdornmentIcon="@Icons.Material.Filled.Search">
+            @bind-Value="@Search" 
+            Label="Pesquisar por lote" 
+            Variant="Variant.Outlined" 
+            AdornmentColor="Color.Primary"
+            Adornment="Adornment.End" 
+            AdornmentIcon="@Icons.Material.Filled.Search"
+            OnKeyUp="@(async args => { if(args.Key == "Enter") await ListByFilter(); })">
+            
             </MudTextField>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-3">
-            <CardLotes></CardLotes>
-        </div>
-
-        <div class="col-3">
-            <CardLotes></CardLotes>
-        </div>
-
-        <div class="col-3">
-            <CardLotes></CardLotes>
-        </div>
-
-        <div class="col-3">
-            <CardLotes></CardLotes>
-        </div>
+        @foreach ( var lote in Lotes)
+        {
+            <div class="col-3">
+                <CardLotes 
+                    DataValidade="@lote.DataValidade"
+                    NomeLote="@lote.NomeLote"
+                    NumeroLote="@lote.NumeroLote"
+                    ClickSelect="() => SelecionarLote(lote)" />
+            </div>
+        }
 
     </div>
 

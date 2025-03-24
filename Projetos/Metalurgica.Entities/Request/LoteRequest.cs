@@ -8,7 +8,6 @@ namespace Metalurgica.Entities.Request
         public string Identificador { get; set; }
         public DateTime? DataFabricacao { get; set; }
         public string Nome { get; set; }
-        public string Validador { get; set; }
         public DateTime? DataValidade { get; set; }
 
     }

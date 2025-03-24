@@ -29,6 +29,7 @@ namespace Metalurgica.Shared.Services
             var allProducts = await _produtoRepository.BuscarTodosAsync();
 
             var productsFilter = allProducts.Select(x => new ProdutoListResponse(
+                idProduto: x.Id_Produto,
                 nome: x.Ds_Nome,
                 editor: x.Ds_Alteracao ?? "Não identificado",
                 dataCriacao: x.Dt_Criacao,
@@ -36,6 +37,18 @@ namespace Metalurgica.Shared.Services
             ));
 
             return new Retorno<IEnumerable<ProdutoListResponse>>(true, productsFilter, HttpStatusCode.OK); ;
+        }
+
+        public async Task<Retorno<IEnumerable<ProdutoSelectResponse>>> ListProductsSelect()
+        {
+            var allProducts = await _produtoRepository.BuscarTodosAsync();
+
+            var productsFilter = allProducts.Select(x => new ProdutoSelectResponse(
+                idProduto: x.Id_Produto,
+                nomeProduto: x.Ds_Nome
+            ));
+
+            return new Retorno<IEnumerable<ProdutoSelectResponse>>(true, productsFilter, HttpStatusCode.OK); ;
         }
 
         public async Task<Retorno<object>> CreateProduct(ProdutoRequest product)

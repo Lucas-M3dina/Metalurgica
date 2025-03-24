@@ -1,4 +1,5 @@
 .scroll-main{
     overflow-y: scroll;
     scroll: hidden;
+    max-height: 100vh;
 }

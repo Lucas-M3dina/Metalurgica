@@ -13,10 +13,11 @@ namespace Metalurgica.Web.Services
     {
         private readonly string _rota = "/lotes";
 
-        //public async Task<Retorno<IEnumerable<ProdutoListResponse>>> ListAllProducts()
-        //{
-        //    return await RealizarRequest<IEnumerable<ProdutoListResponse>>(HttpMethod.Get, _rota);
-        //}
+        public async Task<IEnumerable<LoteFilterResponse>> ListLotesByFilter(string search)
+        {
+            var retorno = await RealizarRequest<IEnumerable<LoteFilterResponse>>(HttpMethod.Get, $"{_rota}?filter={search}");
+            return retorno.Data ?? [];
+        }
 
         public async Task<Retorno<object>> CreateLote(LoteRequest request)
         {

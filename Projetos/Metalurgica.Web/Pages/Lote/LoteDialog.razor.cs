@@ -14,12 +14,15 @@ namespace Metalurgica.Web.Pages.Lote
         private IMudDialogInstance _MudDialog { get; set; }
         [Inject]
         private LoteWebService LoteWebService { get; set; }
+        [Inject]
+        private ProductWebService ProductWebService { get; set; }
 
         public LoteRequest Lote { get; set; } = new();
+        public IEnumerable<ProdutoSelectResponse> Produtos { get; set; } = [];
 
         protected override async Task OnInitializedAsync()
         {
-           
+            await ListProducts();
         }
 
         private void Submit() => _MudDialog.Close(DialogResult.Ok(true));
@@ -31,5 +34,12 @@ namespace Metalurgica.Web.Pages.Lote
             var retorno = await LoteWebService.CreateLote(Lote);
             Submit();
         }
+        
+        private async Task ListProducts()
+        {
+            Produtos = await ProductWebService.ListProductSelect();
+        }
+
+
     }
 }

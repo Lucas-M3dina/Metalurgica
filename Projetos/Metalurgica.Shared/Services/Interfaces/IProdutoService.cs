@@ -8,5 +8,6 @@ namespace Metalurgica.Shared.Services.Interfaces
     {
         Task<Retorno<IEnumerable<ProdutoListResponse>>> ListProductsFilter();
         Task<Retorno<object>> CreateProduct(ProdutoRequest product);
+        Task<Retorno<IEnumerable<ProdutoSelectResponse>>> ListProductsSelect();
     }
 }

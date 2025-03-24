@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Metalurgica.Controllers;
 using Metalurgica.Entities.Request;
+using Metalurgica.Shared.Services;
 using Metalurgica.Shared.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,6 +16,13 @@ namespace Metalurgica.Api.Controllers
         {
             var lote = await loteService.CreateLote(request);
             return await Result(lote);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetLotesByFilter([FromQuery] string? filter)
+        {
+            var lotes = await loteService.ListLotesByFilter(filter ?? string.Empty);
+            return await Result(lotes);
         }
     }
 }

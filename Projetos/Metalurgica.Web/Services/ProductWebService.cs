@@ -15,7 +15,13 @@ namespace Metalurgica.Web.Services
 
         public async Task<Retorno<IEnumerable<ProdutoListResponse>>> ListAllProducts()
         {
-            return await RealizarRequest<IEnumerable<ProdutoListResponse>>(HttpMethod.Get, _rota);
+            return await RealizarRequest<IEnumerable<ProdutoListResponse>>(HttpMethod.Get, $"{_rota}/filter");
+        }
+
+        public async Task<IEnumerable<ProdutoSelectResponse>> ListProductSelect()
+        {
+            var retorno =  await RealizarRequest<IEnumerable<ProdutoSelectResponse>>(HttpMethod.Get, _rota);
+            return retorno?.Data ?? [];
         }
 
         public async Task<Retorno<object>> CreateProduct(ProdutoRequest request)

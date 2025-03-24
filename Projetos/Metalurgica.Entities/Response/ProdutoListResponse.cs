@@ -7,14 +7,15 @@
             
         }
 
-        public ProdutoListResponse(string nome, string editor, DateTime dataCriacao, string setor)
+        public ProdutoListResponse(string nome, string editor, DateTime dataCriacao, string setor, int idProduto)
         {
             Nome = nome;
             Editor = editor;
             DataCriacao = dataCriacao;
             Setor = setor;
+            IdProduto = idProduto;
         }
-
+        public int IdProduto { get; set; }
         public string Nome { get; set; }
         public string Editor { get; set; }
         public DateTime DataCriacao { get; set; }

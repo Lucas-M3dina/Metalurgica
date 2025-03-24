@@ -12,10 +12,17 @@ namespace Metalurgica.Api.Controllers
     {
         private readonly IProdutoService _produtoService = produtoService;
 
-        [HttpGet]
+        [HttpGet("filter")]
         public async Task<IActionResult> GetAllProducts()
         {
             var products = await _produtoService.ListProductsFilter();
+            return await Result(products);
+        }
+        
+        [HttpGet]
+        public async Task<IActionResult> GetAllProductSelect()
+        {
+            var products = await _produtoService.ListProductsSelect();
             return await Result(products);
         }
 
