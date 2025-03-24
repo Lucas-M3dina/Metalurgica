@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Metalurgica.Api.props" />
-</Project>

@@ -1,9 +1,0 @@
-wwwroot\css\app.css
-wwwroot\favicon.png
-wwwroot\img\ausencia-lote.png
-wwwroot\img\fundo-login.png
-wwwroot\img\laboratorio.png
-wwwroot\img\logo.png
-wwwroot\img\logo-azul-redondo.png
-wwwroot\img\logo-branco-redondo.png
-wwwroot\index.html
