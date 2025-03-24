@@ -11,11 +11,10 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("bc709e57-9698-4ba5-9275-a8fbdae1ec77")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Metalurgica.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2d05334ad25608b7698a100b409c8c5344a7e41")]
 [assembly: System.Reflection.AssemblyProductAttribute("Metalurgica.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Metalurgica.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

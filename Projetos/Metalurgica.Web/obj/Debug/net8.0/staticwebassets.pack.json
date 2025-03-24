@@ -1,47 +1,47 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\USER\\Desktop\\Projetos\\Metalurgica\\Projetos\\Metalurgica.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Metalurgica.Web.styles.css",
+      "Id": "C:\\Users\\USER\\Desktop\\Projetos\\Metalurgica\\Projetos\\Metalurgica.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Metalurgica.Web.styles.css",
       "PackagePath": "staticwebassets\\Metalurgica.Web.styles.css"
     },
     {
-      "Id": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\USER\\Desktop\\Projetos\\Metalurgica\\Projetos\\Metalurgica.Web\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\USER\\Desktop\\Projetos\\Metalurgica\\Projetos\\Metalurgica.Web\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\wwwroot\\img\\ausencia-lote.png",
+      "Id": "C:\\Users\\USER\\Desktop\\Projetos\\Metalurgica\\Projetos\\Metalurgica.Web\\wwwroot\\img\\ausencia-lote.png",
       "PackagePath": "staticwebassets\\img\\ausencia-lote.png"
     },
     {
-      "Id": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\wwwroot\\img\\fundo-login.png",
+      "Id": "C:\\Users\\USER\\Desktop\\Projetos\\Metalurgica\\Projetos\\Metalurgica.Web\\wwwroot\\img\\fundo-login.png",
       "PackagePath": "staticwebassets\\img\\fundo-login.png"
     },
     {
-      "Id": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\wwwroot\\img\\laboratorio.png",
+      "Id": "C:\\Users\\USER\\Desktop\\Projetos\\Metalurgica\\Projetos\\Metalurgica.Web\\wwwroot\\img\\laboratorio.png",
       "PackagePath": "staticwebassets\\img\\laboratorio.png"
     },
     {
-      "Id": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\wwwroot\\img\\logo-azul-redondo.png",
+      "Id": "C:\\Users\\USER\\Desktop\\Projetos\\Metalurgica\\Projetos\\Metalurgica.Web\\wwwroot\\img\\logo-azul-redondo.png",
       "PackagePath": "staticwebassets\\img\\logo-azul-redondo.png"
     },
     {
-      "Id": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\wwwroot\\img\\logo-branco-redondo.png",
+      "Id": "C:\\Users\\USER\\Desktop\\Projetos\\Metalurgica\\Projetos\\Metalurgica.Web\\wwwroot\\img\\logo-branco-redondo.png",
       "PackagePath": "staticwebassets\\img\\logo-branco-redondo.png"
     },
     {
-      "Id": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\wwwroot\\img\\logo.png",
+      "Id": "C:\\Users\\USER\\Desktop\\Projetos\\Metalurgica\\Projetos\\Metalurgica.Web\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
     },
     {
-      "Id": "C:\\Users\\medina\\Desktop\\Metalurgica\\Projetos\\Metalurgica.Web\\wwwroot\\index.html",
+      "Id": "C:\\Users\\USER\\Desktop\\Projetos\\Metalurgica\\Projetos\\Metalurgica.Web\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {

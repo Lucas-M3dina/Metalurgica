@@ -18,8 +18,6 @@ namespace Metalurgica.Shared.Services
     {
         public async Task<Retorno<LoginResponse>> Logar(LoginRequest dadosLogin)
         {
-            var temp = Criptografia.Criptografar(dadosLogin.Senha);
-
             string erroGenerico = "Usuario ou senha incorretos";
             Usuario usuarioLogado = await usuariosRepository.BuscarPorAsync(x => x.Ds_Email == dadosLogin.Email);
             if (usuarioLogado == null)

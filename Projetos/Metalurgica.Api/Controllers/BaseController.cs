@@ -1,4 +1,5 @@
-﻿using Metalurgica.Entities.Common;
+﻿using System.Threading.Tasks;
+using Metalurgica.Entities.Common;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Metalurgica.Controllers

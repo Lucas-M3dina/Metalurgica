@@ -1,4 +1,5 @@
-﻿using Metalurgica.Controllers;
+﻿using System.Threading.Tasks;
+using Metalurgica.Controllers;
 using Metalurgica.Shared.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 

@@ -26,6 +26,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Metalurgica.Api.Controllers.LotesController",
+    "Method": "PostLote",
+    "RelativePath": "api/Lotes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Metalurgica.Entities.Request.LoteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Metalurgica.Api.Controllers.ProdutosController",
     "Method": "GetAllProducts",
     "RelativePath": "api/Produtos",

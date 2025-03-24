@@ -5,6 +5,7 @@ using Metalurgica.Entities.Response;
 using Metalurgica.Shared.Services.Interfaces;
 using Metalurgica.Entities.Request;
 using Metalurgica.Entities.Common;
+using System.Threading.Tasks;
 
 namespace Metalurgica.Api.Controllers
 {

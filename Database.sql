@@ -2,10 +2,8 @@ IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'Metalurgica')
 BEGIN
     CREATE DATABASE Metalurgica;
 END;
-GO
 
 USE Metalurgica;
-GO
 
 IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Cargo]') AND type in (N'U'))
 BEGIN
@@ -24,7 +22,6 @@ BEGIN
 		('Analista', 1, GETDATE(), NULL, NULL);
 
 END;
-GO 
 
 IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Usuario]') AND type in (N'U'))
 BEGIN
@@ -46,7 +43,7 @@ BEGIN
 	VALUES (
 		1, 
 		'Lucas Medina', 
-		'$2a$11$pk3lC6XodTzjhmminoCyXOAYIlEG7ekyzpty04POvb56j/J0ce1je', 
+		'$2a$11$RV3BWR1u7HlM/FbL8zr5u.KHgGwniHpZoCgByjgk/zsOaOUhv/D4K', 
 		'lucas.m3dina@gmail.com', 
 		1, 
 		GETDATE(), 
@@ -55,7 +52,6 @@ BEGIN
 	);
 
 END;
-GO 
 
 IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Produto]') AND type in (N'U'))
 BEGIN
@@ -77,7 +73,6 @@ BEGIN
 		Ds_Alteracao		VARCHAR(200)	NULL,
     );
 END;
-GO 
 
 IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Embalagem]') AND type in (N'U'))
 BEGIN
@@ -91,7 +86,6 @@ BEGIN
 		Ds_Alteracao			VARCHAR(200)	NULL,
     );
 END;
-GO 
 
 
 IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[ProdutoEmbalagem]') AND type in (N'U'))
@@ -112,7 +106,6 @@ BEGIN
 
     );
 END;
-GO 
 
 IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Quesito]') AND type in (N'U'))
 BEGIN
@@ -127,7 +120,6 @@ BEGIN
 		Ds_Alteracao			VARCHAR(200)	NULL,
     );
 END;
-GO 
 
 IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[ProdutoQuesito]') AND type in (N'U'))
 BEGIN
@@ -147,5 +139,23 @@ BEGIN
 		CONSTRAINT FK_ProdutoQuesito_Quesito	FOREIGN KEY (Id_Quesito)	REFERENCES Quesito(Id_Quesito)
     );
 END;
-GO 
+
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Lote]') AND type in (N'U'))
+BEGIN
+    CREATE TABLE Lote(
+        Id_Lote					INT				PRIMARY KEY IDENTITY(1,1),
+		Id_Produto				INT				NOT NULL,
+   		Ds_Identificador		VARCHAR(200)	NULL,
+		Dt_Fabricacao			DATETIME		NULL,
+		Ds_Nome					VARCHAR(200)	NULL,
+		Ds_Validador			VARCHAR(200)	NULL,
+		Dt_Validade				DATETIME		NULL,
+
+        Fl_Ativo				BIT				NOT NULL,
+        Dt_Criacao				DATETIME		NOT NULL,
+        Dt_Alteracao			DATETIME		NULL,
+		Ds_Alteracao			VARCHAR(200)	NULL,
+		CONSTRAINT FK_Lote_Produto	FOREIGN KEY (Id_Produto)	REFERENCES Produto(Id_Produto),
+    );
+END;
 

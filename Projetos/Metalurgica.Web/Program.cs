@@ -18,6 +18,7 @@ builder.Services.AddScoped<LoginWebService>();
 builder.Services.AddScoped<ProductWebService>();
 builder.Services.AddScoped<QuesitoWebService>();
 builder.Services.AddScoped<EmbalagemWebService>();
+builder.Services.AddScoped<LoteWebService>();
 
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");

@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>xigtuouhi6</Fingerprint>
-      <Integrity>6VaVWeIoAZd+SrtJ+ahbkAcOYwk8asTAsBOFsENSW4Q=</Integrity>
+      <Fingerprint>or3d8bj7jx</Fingerprint>
+      <Integrity>rKcber74EK/w1lurvQHL6K8hXO5Tw/Hn+1K4UER3nYs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\app.css'))</OriginalItemSpec>
@@ -174,8 +174,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ApplicationBundle</AssetTraitValue>
-      <Fingerprint>xmpalik9rj</Fingerprint>
-      <Integrity>tyJaF1KFf/2i8D43SNKFwIlBU06jz618C1YVRfK9awM=</Integrity>
+      <Fingerprint>lqj6et01mr</Fingerprint>
+      <Integrity>k7R/sFSV8s2V/Y3R68u2Z8it6bQ3Ek4nK0iTQ2bhDxQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Metalurgica.Web.styles.css'))</OriginalItemSpec>

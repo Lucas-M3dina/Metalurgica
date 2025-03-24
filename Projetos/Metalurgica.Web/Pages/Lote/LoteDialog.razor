@@ -1,0 +1,76 @@
+﻿<MudDialog Class="container">
+    <DialogContent>
+        <EditForm Model="@Lote" OnValidSubmit="HandleValidSubmit" FormName="formularioCadastrolote" class="row w-100 h-100  ">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <div class="row d-flex justify-content-center">
+                <img src="/img/logo.png" alt="Logo" class="logo-modal-lote mb-4" />
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <p class="arvo fw-bold fs-6 my-4">Cadastro de Lote:</p>
+                </div>
+
+                <div class="col-4 mb-3">
+                    <label for="Identificador" class="arvo fs-7">Identificador</label>
+                    <InputText id="Identificador"
+                               class="form-control h-input fs-7 lh-04 arvo-placeholder py-3 borda-input"
+                               @bind-Value="Lote.Identificador"
+                               placeholder="Digite o numero do Lote" />
+                </div>
+
+                <div class="col-4 mb-3">
+                    <label for="DtFabricacao" class="arvo fs-7">Data de Fabricação</label>
+                    <MudDatePicker id="DtFabricacao"
+                                   Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input py-2 ps-1"
+                                   Mask="@(new DateMask("dd/MM/yyyy"))"
+                                   DateFormat="dd/MM/yyyy"
+                                   Underline="false"
+                                   @bind-Date="Lote.DataFabricacao" />
+                </div>
+
+                <div class="col-4 mb-3">
+                    <label for="DtValidade" class="arvo fs-7">Data de Validade</label>
+                    <MudDatePicker id="DtValidade"
+                                   Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input py-2 ps-1"
+                                   Mask="@(new DateMask("dd/MM/yyyy"))"
+                                   DateFormat="dd/MM/yyyy"
+                                   Underline="false"
+                                   @bind-Date="Lote.DataValidade" />
+                </div>
+
+                <div class="col-6 mb-3">
+                    <label for="produto" class="arvo fs-7">Produto</label>
+                    <MudSelect id="produto"
+                               Underline="false"
+                               Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input  py-2 ps-1"
+                               @bind-Value="Lote.IdProduto">
+                        
+                            <MudSelectItem Value="1" Class="fs-7">Produto 01</MudSelectItem>
+                        
+                    </MudSelect>
+                </div>
+
+                <div class="col-6 mb-3">
+                    <label for="Nome" class="arvo fs-7">Nome</label>
+                    <InputText id="Nome"
+                               class="form-control h-input fs-7 lh-04 arvo-placeholder py-3 borda-input"
+                               @bind-Value="Lote.Nome"
+                               placeholder="Digite o nome do Lote" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center my-5">
+                    <MudButton ButtonType="ButtonType.Submit"
+                               Variant="Variant.Filled"
+                               Color="Color.Secondary"
+                               Class="arvo text-capitalize py-2 px-5 fs-6 mt-5 w-fit-content">Cadastrar</MudButton>
+                </div>
+            </div>
+        </EditForm>
+
+    </DialogContent>
+</MudDialog>
