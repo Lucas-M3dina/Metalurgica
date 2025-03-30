@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
+using System;
 
 namespace Metalurgica.Web.Pages.Lote
 {
@@ -17,7 +18,7 @@ namespace Metalurgica.Web.Pages.Lote
         [Inject]
         private ProductWebService ProductWebService { get; set; }
 
-        public LoteRequest Lote { get; set; } = new();
+        public LoteRequest Lote { get; set; } = new() { IdProduto = 1 };
         public IEnumerable<ProdutoSelectResponse> Produtos { get; set; } = [];
 
         protected override async Task OnInitializedAsync()
@@ -38,6 +39,7 @@ namespace Metalurgica.Web.Pages.Lote
         private async Task ListProducts()
         {
             Produtos = await ProductWebService.ListProductSelect();
+            StateHasChanged();
         }
 
 
