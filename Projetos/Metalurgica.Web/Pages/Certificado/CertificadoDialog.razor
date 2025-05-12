@@ -1,0 +1,66 @@
+﻿<MudDialog Class="container">
+    <DialogContent>
+        <EditForm Model="@Certificate" OnValidSubmit="HandleValidSubmit" FormName="formularioCertificado" class="row w-100 h-100  ">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <div class="row d-flex justify-content-center">
+                <img src="/img/logo.png" alt="Logo" class="logo-modal-certificado mb-4" />
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <p class="arvo fw-bold fs-6 my-4">Cadastro de Certificado:</p>
+                </div>
+
+                <div class="col-4 mb-3">
+                    <label for="NotaFiscal" class="arvo fs-7">Nota Fiscal</label>
+                    <InputText id="NotaFiscal"
+                               class="form-control h-input fs-7 lh-04 arvo-placeholder py-3 borda-input"
+                               @bind-Value="Certificate.NotaFiscal"
+                               placeholder="Digite a Nota Fiscal" />
+                </div>
+
+                <div class="col-4 mb-3">
+                    <label for="Cliente" class="arvo fs-7">Cliente</label>
+                    <InputText id="Cliente"
+                               class="form-control h-input fs-7 lh-04 arvo-placeholder py-3 borda-input"
+                               @bind-Value="Certificate.Cliente"
+                               placeholder="Digite o cliente" />
+                </div>
+
+                <div class="col-4 mb-3">
+                    <label for="Validade" class="arvo fs-7">Peso (Kg)</label>
+                    <MudNumericField @bind-Value="Certificate.Peso"
+                                     Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input py-2 ps-1"
+                                     Underline="false"
+                                     Placeholder="Digite a Validade"
+                                     Min="0" />
+                </div>
+
+                <div class="col-12 mb-3">
+                    <label for="lote" class="arvo fs-7">Lote</label>
+                    <MudSelect id="lote"
+                               Underline="false"
+                               Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input  py-2 ps-1"
+                               @bind-Value="Certificate.IdLote">
+                        @foreach (var lote in LoteSelectResponse)
+                        {
+                            <MudSelectItem Value="lote.IdLote">@lote.IdentificadorLote</MudSelectItem>
+                        }
+                    </MudSelect>
+                </div>
+
+            </div>
+
+
+            <div class="col-12 d-flex justify-content-center my-5">
+                <MudButton ButtonType="ButtonType.Submit"
+                           Variant="Variant.Filled"
+                           Color="Color.Secondary"
+                           Class="arvo text-capitalize py-2 px-5 fs-6 mt-5 w-fit-content">Cadastrar</MudButton>
+            </div>
+        </EditForm>
+
+    </DialogContent>
+</MudDialog>

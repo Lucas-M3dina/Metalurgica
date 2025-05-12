@@ -8,5 +8,6 @@ namespace Metalurgica.Shared.Services.Interfaces
     {
         Task<Retorno<object>> CreateLote(LoteRequest lote);
         Task<Retorno<IEnumerable<LoteFilterResponse>>> ListLotesByFilter(string filter);
+        Task<Retorno<IEnumerable<LoteSelectResponse>>> ListLotesToSelect();
     }
 }

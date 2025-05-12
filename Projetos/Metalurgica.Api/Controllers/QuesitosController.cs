@@ -12,9 +12,16 @@ namespace Metalurgica.Api.Controllers
         private readonly IQuesitoService _quesitoService = quesitoService;
 
         [HttpGet]
-        public async Task<IActionResult> GetAllEmbalagens()
+        public async Task<IActionResult> GetAllQuesitos()
         {
             var quesitos = await _quesitoService.ListAllQuesitos();
+            return await Result(quesitos);
+        }
+
+        [HttpGet("{productId}")]
+        public async Task<IActionResult> GetAllQuesitosByIdProduct(int productId)
+        {
+            var quesitos = await _quesitoService.ListAllQuesitosbyIdProduto(productId);
             return await Result(quesitos);
         }
 

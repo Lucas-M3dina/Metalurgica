@@ -6,5 +6,6 @@ namespace Metalurgica.Shared.Services.Interfaces
     public interface IQuesitoService
     {
         Task<Retorno<IEnumerable<QuesitoResponse>>> ListAllQuesitos();
+        Task<Retorno<IEnumerable<QuesitoDataResponse>>> ListAllQuesitosbyIdProduto(int idProduto);
     }
 }

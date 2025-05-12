@@ -3,9 +3,9 @@ WORKDIR /app
 
 COPY ../ ./
 
-RUN dotnet restore
+RUN dotnet restore Metalurgica.Api/Metalurgica.Api.csproj
 
-RUN dotnet publish -c Release -o out
+RUN dotnet publish Metalurgica.Api/Metalurgica.Api.csproj -c Release -o out
 RUN dotnet dev-certs https --trust
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /runtime

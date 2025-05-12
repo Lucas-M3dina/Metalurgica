@@ -48,7 +48,7 @@ namespace Metalurgica.Shared.Services
                 nomeProduto: x.Ds_Nome
             ));
 
-            return new Retorno<IEnumerable<ProdutoSelectResponse>>(true, productsFilter, HttpStatusCode.OK); ;
+            return new Retorno<IEnumerable<ProdutoSelectResponse>>(true, productsFilter, HttpStatusCode.OK); 
         }
 
         public async Task<Retorno<object>> CreateProduct(ProdutoRequest product)

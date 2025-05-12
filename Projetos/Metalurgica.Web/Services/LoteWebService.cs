@@ -18,6 +18,12 @@ namespace Metalurgica.Web.Services
             var retorno = await RealizarRequest<IEnumerable<LoteFilterResponse>>(HttpMethod.Get, $"{_rota}?filter={search}");
             return retorno.Data ?? [];
         }
+        
+        public async Task<IEnumerable<LoteSelectResponse>> ListLotesToSelect()
+        {
+            var retorno = await RealizarRequest<IEnumerable<LoteSelectResponse>>(HttpMethod.Get, $"{_rota}/select");
+            return retorno.Data ?? [];
+        }
 
         public async Task<Retorno<object>> CreateLote(LoteRequest request)
         {

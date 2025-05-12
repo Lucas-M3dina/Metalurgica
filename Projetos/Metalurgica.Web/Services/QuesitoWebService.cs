@@ -16,5 +16,11 @@ namespace Metalurgica.Web.Services
         {
             return await RealizarRequest<IEnumerable<QuesitoResponse>>(HttpMethod.Get, _rota);
         }
+
+        public async Task<IEnumerable<QuesitoDataResponse>> ListAllQuesitosByProductId(int productId)
+        {
+            var retorno = await RealizarRequest<IEnumerable<QuesitoDataResponse>>(HttpMethod.Get, $"{_rota}/{productId}");
+            return retorno?.Data ?? [];
+        }
     }
 }

@@ -1,5 +1,5 @@
 ﻿.fundo-login {
-    background-image: url('./img/fundo-login.png');
+    background-image: url('/img/fundo-login.png');
     background-size: cover;
     background-repeat: no-repeat;
 }

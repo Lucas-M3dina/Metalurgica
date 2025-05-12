@@ -24,5 +24,12 @@ namespace Metalurgica.Api.Controllers
             var lotes = await loteService.ListLotesByFilter(filter ?? string.Empty);
             return await Result(lotes);
         }
+        
+        [HttpGet("select")]
+        public async Task<IActionResult> GetLotesToSelect()
+        {
+            var lotes = await loteService.ListLotesToSelect();
+            return await Result(lotes);
+        }
     }
 }

@@ -39,7 +39,7 @@ namespace Metalurgica.Web.Pages.Produto
         private void Cancel() => _MudDialog.Cancel();
 
         
-        private void AddEmbalagem() => Product.Embalagens.Add(new EmbalagemRequest(1));
+        private void AddEmbalagem() => Product.Embalagens.Add(new EmbalagemRequest(embalagens.FirstOrDefault().IdEmbalagem));
 
         private void RemoveEmbalagem(EmbalagemRequest embalagemRequest)
         {
@@ -63,7 +63,7 @@ namespace Metalurgica.Web.Pages.Produto
             Product.Quesitos.Remove(quesitoRequest);
         }
 
-        private void AddQuesito() => Product.Quesitos.Add(new QuesitoRequest(1));
+        private void AddQuesito() => Product.Quesitos.Add(new QuesitoRequest(Quesitos.FirstOrDefault().IdQuesito));
 
         private async Task ListAllQuesitos()
         {
@@ -74,6 +74,7 @@ namespace Metalurgica.Web.Pages.Produto
         private async Task HandleValidSubmit()
         {
             var retorno = await _ProductWebService.CreateProduct(Product);
+            Submit();
         }
     }
 }

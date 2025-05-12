@@ -1,0 +1,50 @@
+﻿@layout MainLayout
+@page "/certificado"
+
+
+<div class="container-fluid d-flex flex-column gap-4">
+    <div class="row">
+        <div class="col-12">
+            <h3 class="roboto">Certificados</h3>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-12 d-flex justify-content-end">
+            <MudButton Variant="Variant.Filled"
+                       Color="Color.Primary"
+                       OnClick="OpenDialogAsync"
+                       Class="arvo py-2 px-5 ">
+                Criar Certificado
+            </MudButton>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <MudTable Class="w-100" Items="@Certificates" Hover="true">
+                <HeaderContent>
+                    <MudTh>Certificado</MudTh>
+                    <MudTh>Produto</MudTh>
+                    <MudTh>Nota Fiscal</MudTh>
+                    <MudTh>Cliente</MudTh>
+                    <MudTh></MudTh>
+                </HeaderContent>
+                <RowTemplate>
+                    <MudTd DataLabel="Certificado">@context.IdCertificado</MudTd>
+                    <MudTd DataLabel="Produto">@context.NomeProduto</MudTd>
+                    <MudTd DataLabel="Nota Fiscal">@context.NotaFiscal</MudTd>
+                    <MudTd DataLabel="Cliente">@context.Cliente</MudTd>
+                    <MudTd DataLabel="Download">
+                        <MudIconButton 
+                            OnClick="() => Download(context.IdCertificado)"
+                            Icon="@Icons.Material.Filled.Download" 
+                            Color="Color.Primary" 
+                            aria-label="download" />
+                    </MudTd>
+                </RowTemplate>
+            </MudTable>
+        </div>
+    </div>
+</div>

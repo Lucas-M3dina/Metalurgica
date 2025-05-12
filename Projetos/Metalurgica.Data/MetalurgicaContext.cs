@@ -13,6 +13,7 @@ namespace Metalurgica.Data
         public DbSet<Quesito> Quesito { get; set; }
         public DbSet<ProdutoQuesito> ProdutoQuesito { get; set; }
         public DbSet<Lote> Lote { get; set; }
+        public DbSet<Certificado> Certificado { get; set; }
 
     }
 }

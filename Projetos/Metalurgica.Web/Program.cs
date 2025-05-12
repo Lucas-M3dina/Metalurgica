@@ -19,11 +19,12 @@ builder.Services.AddScoped<ProductWebService>();
 builder.Services.AddScoped<QuesitoWebService>();
 builder.Services.AddScoped<EmbalagemWebService>();
 builder.Services.AddScoped<LoteWebService>();
+builder.Services.AddScoped<CertificadoWebService>();
 
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 //builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:7147/api") });
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("http://147.79.82.14:2601/api") });
 
 
 builder.Services.AddMudServices();

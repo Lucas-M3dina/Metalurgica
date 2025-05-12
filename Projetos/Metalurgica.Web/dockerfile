@@ -5,6 +5,8 @@ WORKDIR /src
 
 COPY . .
 WORKDIR /src/Metalurgica.Web
+
+RUN find . -type d \( -name bin -o -name obj \) -exec rm -rf {} +  
 RUN dotnet restore Metalurgica.Web.csproj
 
 RUN dotnet build Metalurgica.Web.csproj -c Release -o /app/build

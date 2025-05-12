@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
 using System;
+using System.Linq;
 
 namespace Metalurgica.Web.Pages.Lote
 {
@@ -17,13 +18,17 @@ namespace Metalurgica.Web.Pages.Lote
         private LoteWebService LoteWebService { get; set; }
         [Inject]
         private ProductWebService ProductWebService { get; set; }
+        [Inject]
+        private QuesitoWebService QuesitoWebService { get; set; }
 
         public LoteRequest Lote { get; set; } = new() { IdProduto = 1 };
         public IEnumerable<ProdutoSelectResponse> Produtos { get; set; } = [];
+        public IEnumerable<QuesitoDataResponse> Quesitos { get; set; } = [];
 
         protected override async Task OnInitializedAsync()
         {
             await ListProducts();
+            await ListQuesitosByIdProduct();
         }
 
         private void Submit() => _MudDialog.Close(DialogResult.Ok(true));
@@ -39,6 +44,17 @@ namespace Metalurgica.Web.Pages.Lote
         private async Task ListProducts()
         {
             Produtos = await ProductWebService.ListProductSelect();
+            var produto = Produtos.FirstOrDefault();
+            if (produto != null)
+            {
+                Lote.IdProduto = produto.IdProduto;
+            }
+            StateHasChanged();
+        }
+
+        private async Task ListQuesitosByIdProduct()
+        {
+            Quesitos = await QuesitoWebService.ListAllQuesitosByProductId(Lote.IdProduto);
             StateHasChanged();
         }
 

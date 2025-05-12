@@ -8,10 +8,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
+using QuestPDF.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
+QuestPDF.Settings.License = LicenseType.Community;
 
 // Injeção de dependências
 builder.Services.AddDbContext<MetalurgicaContext>(options =>
@@ -25,17 +27,18 @@ builder.Services.AddScoped<IEmbalagemRepository, EmbalagemRepository>();
 builder.Services.AddScoped<IQuesitoRepository, QuesitoRepository>();
 builder.Services.AddScoped<IProdutoEmbalagemRepository, ProdutoEmbalagemRepository>();
 builder.Services.AddScoped<ILoteRepository, LoteRepository>();
+builder.Services.AddScoped<ICertificadoRepository, CertificadoRepository>();
 
 builder.Services.AddScoped<ILoginService, LoginService>();
 builder.Services.AddScoped<IProdutoService, ProdutoService>();
 builder.Services.AddScoped<IEmbalagemService, EmbalagemService>();
 builder.Services.AddScoped<IQuesitoService, QuesitoService>();
 builder.Services.AddScoped<ILoteService, LoteService>();
+builder.Services.AddScoped<ICertificateService, CertificateService>();
 
 
 // Add services to the container
 builder.Services.AddControllers();
-
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

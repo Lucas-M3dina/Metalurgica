@@ -44,9 +44,9 @@
                 <div class="col-6 mb-3">
                     <label for="produto" class="arvo fs-7">Produto</label>
                     <MudSelect id="produto"
-                    Underline="false"
-
-                    Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input  py-2 ps-1"
+                        Underline="false"
+                        @bind-Value:after="ListQuesitosByIdProduct"
+                        Class="form-control h-input fs-7 lh-04 arvo-placeholder borda-input  py-2 ps-1"
                     @bind-Value="Lote.IdProduto">
                         @foreach (var product in Produtos)
                         {
@@ -62,6 +62,25 @@
                                class="form-control h-input fs-7 lh-04 arvo-placeholder py-3 borda-input"
                                @bind-Value="Lote.Nome"
                                placeholder="Digite o nome do Lote" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <MudTable Class="w-100" Items="@Quesitos" Hover="true">
+                        <HeaderContent>
+                            <MudTh>Nome</MudTh>
+                            <MudTh>Ideal</MudTh>
+                            <MudTh>Minimo</MudTh>
+                            <MudTh>Maximo</MudTh>
+                        </HeaderContent>
+                        <RowTemplate Context="quesito">
+                            <MudTd DataLabel="Nome">@quesito.Nome</MudTd>
+                            <MudTd DataLabel="Setor">@quesito.Ideal</MudTd>
+                            <MudTd DataLabel="Editor">@quesito.Minimo</MudTd>
+                            <MudTd DataLabel="DataCriacao">@quesito.Maximo</MudTd>
+                        </RowTemplate>
+                    </MudTable>
                 </div>
             </div>
 

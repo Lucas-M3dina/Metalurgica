@@ -28,6 +28,13 @@ namespace Metalurgica.Shared.Services
 
             return new Retorno<object>(true, HttpStatusCode.Created);
         }
+
+        public async Task<Retorno<IEnumerable<LoteSelectResponse>>> ListLotesToSelect()
+        {
+            var lotesDb = await loteRepository.BuscarTodosAsync();
+            var selectLotes = lotesDb.Select(x => new LoteSelectResponse(x.Id_Lote, x.Ds_Identificador));
+            return new Retorno<IEnumerable<LoteSelectResponse>>(true, selectLotes, HttpStatusCode.OK);
+        }
         
         public async Task<Retorno<IEnumerable<LoteFilterResponse>>> ListLotesByFilter(string search)
         {
